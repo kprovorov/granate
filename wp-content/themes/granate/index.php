@@ -14,7 +14,7 @@
 													<?= get_sub_field( "title" ) ?>
 												</div><!-- .text__wrap -->
 											</div><!-- .info col-lg-6 -->
-											<div class="slide-photo col-lg-6" style="background: url(<?= get_image_field( get_sub_field( "img" ), "slider" ) ?>)">
+											<div class="slide-photo col-lg-6">
 
 											</div><!-- .photo col-lg-6 -->
 										</div><!-- .row -->
