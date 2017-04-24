@@ -19,3 +19,7 @@ figure.specialist img {
 .new-equipment .equipment-item .img-wrap img {
   max-height: 308px;
 }
+
+body {
+  overflow-x: hidden;
+}
