@@ -23,3 +23,12 @@ figure.specialist img {
 body {
   overflow-x: hidden;
 }
+
+.quality__left.justpage {
+  font-weight: 500;
+}
+
+.alignleft {
+    float: left;
+    margin: 0.5em 1em 0.5em 0;
+}
