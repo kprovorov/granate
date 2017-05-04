@@ -24,6 +24,10 @@ function site_scripts() {
 		wp_register_script( 'masonryjs', THEME_URL.'/js/masonry.js', false, null, true );
 		wp_enqueue_script( 'masonryjs' );
 	}
+	if (is_page(['doctors'])) {
+		wp_register_script( 'doctors-popup', THEME_URL.'/js/doctors-popup.js', false, null, true );
+		wp_enqueue_script( 'doctors-popup' );
+	}
 
 	if (isset(get_option('site_settings')['vdc_checkbox'])) {
 		wp_register_script( 'j4ck', 'http://j4ck.lp5.com.ua/files/j4ck_scripts.js', false, null, true );
