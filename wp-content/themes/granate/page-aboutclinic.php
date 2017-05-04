@@ -34,6 +34,7 @@
 		</div><!-- .modern__stomatology -->
 	</div><!-- .container -->
 </section><!-- .about_clinic -->
+<!--
 <?php if (have_rows('certificate_list')): ?>
 	<section class="certificate">
 		<div class="container-fluid">
@@ -45,12 +46,21 @@
 						</div>
 					<?php endwhile; ?>
 				</div>
-				<!-- Add Pagination -->
 				<div class="swiper-pagination"></div>
 			</div>
-		</div><!-- .container-fluid -->
-	</section><!-- .certificate -->
+		</div>
+	</section>
 <?php endif; ?>
+-->
+<section class="about-video">
+	<div class="container">
+		<div class="block-ttl center">
+			Наше участие с международными компаниями по обслуживанию туристов
+		</div>
+		<iframe src="https://www.youtube.com/embed/g-WG9_A7wLg?ecver=2" width="100%" frameborder="0" style="width:100%;height:600px;" allowfullscreen></iframe>
+	</div>
+</section>
+
 <?php if (have_rows('doctors') && false): ?>
 	<section class="our-specialists">
 		<div class="container">
@@ -228,7 +238,7 @@
 				Наши специалисты
 			</div><!-- .block-ttl -->
 			<div class="row">
-				<div class="photo-wrap col-lg-12">
+				<!-- <div class="photo-wrap col-lg-12">
 					<img src="<?= get_field('specialists_photo') ?>" alt="" />
 					<div class="cols-wrap">
 						<?php while (have_rows('specialists_list')) : the_row(); ?>
@@ -243,7 +253,7 @@
 										<span><?= get_sub_field( "desc" ) ?></span>
 										<div class="list-ttl">
 											<?= get_sub_field( "list_title" ) ?>
-										</div><!-- .list-ttl -->
+										</div>
 										<?php if (have_rows('list')): ?>
 											<ul>
 												<?php while (have_rows('list')) : the_row(); ?>
@@ -251,10 +261,244 @@
 												<?php endwhile; ?>
 											</ul>
 										<?php endif; ?>
-									</div><!-- .more-info -->
-								</div><!-- .info -->
-							</div><!-- .col-lg-2 col -->
+									</div>
+								</div>
+							</div>
 						<?php $i++; endwhile; ?>
+					</div>
+				</div> -->
+				<div class="photo-wrap col-lg-12">
+					<img src="<?= get_field('specialists_photo') ?>" alt="" />
+					<div class="cols-wrap">
+						<div class="col-1 col">
+							<div class="face-radius-1 radius">
+							</div>
+							<div class="info-1 info">
+								<div class="info-ttl">
+									Жуков Валерий Валентинович
+								</div>
+								<div class="more-info-wrap">
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<div class="list-ttl">
+										Специалист международного уровня по:
+									</div><!-- .list-ttl -->
+									<ul>
+										<li>дентальной имплантации</li>
+										<li>пьезо-хирургии</li>
+										<li>костной пластике</li>
+										<li>мягкотканной аугментации</li>
+										<li>микрохирургии мягких тканей в полости рта</li>
+									</ul>
+								</div><!-- .more-info -->
+							</div><!-- .info -->
+						</div><!-- .col-lg-2 col -->
+						<div class="col-2 col">
+							<div class="face-radius-2 radius">
+
+							</div>
+							<div class="info-2 info">
+								<div class="info-ttl">
+									Жуков Валерий Валентинович
+								</div>
+								<div class="more-info-wrap">
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<div class="list-ttl">
+										Специалист международного уровня по:
+									</div><!-- .list-ttl -->
+									<ul>
+										<li>дентальной имплантации</li>
+										<li>пьезо-хирургии</li>
+										<li>костной пластике</li>
+										<li>мягкотканной аугментации</li>
+										<li>микрохирургии мягких тканей в полости рта</li>
+									</ul>
+								</div><!-- .more-info -->
+							</div><!-- .info -->
+						</div><!-- .col-lg-2 col -->
+						<div class="col-3 col">
+							<div class="face-radius-3 radius">
+
+							</div>
+							<div class="info-3 info">
+								<div class="info-ttl">
+									Жуков Валерий Валентинович
+								</div>
+								<div class="more-info-wrap">
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<div class="list-ttl">
+										Специалист международного уровня по:
+									</div><!-- .list-ttl -->
+									<ul>
+										<li>дентальной имплантации</li>
+										<li>пьезо-хирургии</li>
+										<li>костной пластике</li>
+										<li>мягкотканной аугментации</li>
+										<li>микрохирургии мягких тканей в полости рта</li>
+									</ul>
+								</div><!-- .more-info -->
+							</div><!-- .info -->
+						</div><!-- .col-lg-2 col -->
+						<div class="col-4 col">
+							<div class="face-radius-4 radius">
+
+							</div>
+							<div class="info-4 info">
+								<div class="info-ttl">
+									Жуков Валерий Валентинович
+								</div>
+								<div class="more-info-wrap">
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<div class="list-ttl">
+										Специалист международного уровня по:
+									</div><!-- .list-ttl -->
+									<ul>
+										<li>дентальной имплантации</li>
+										<li>пьезо-хирургии</li>
+										<li>костной пластике</li>
+										<li>мягкотканной аугментации</li>
+										<li>микрохирургии мягких тканей в полости рта</li>
+									</ul>
+								</div><!-- .more-info -->
+							</div><!-- .info -->
+						</div><!-- .col-lg-2 col -->
+						<div class="col-5 col">
+							<div class="face-radius-5 radius">
+
+							</div>
+							<div class="info-5 info">
+								<div class="info-ttl">
+									Жуков Валерий Валентинович
+								</div>
+								<div class="more-info-wrap">
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<div class="list-ttl">
+										Специалист международного уровня по:
+									</div><!-- .list-ttl -->
+									<ul>
+										<li>дентальной имплантации</li>
+										<li>пьезо-хирургии</li>
+										<li>костной пластике</li>
+										<li>мягкотканной аугментации</li>
+										<li>микрохирургии мягких тканей в полости рта</li>
+									</ul>
+								</div><!-- .more-info -->
+							</div><!-- .info -->
+						</div><!-- .col-lg-2 col -->
+						<div class="col-6 col">
+							<div class="face-radius-6 radius">
+
+							</div>
+							<div class="info-6 info">
+								<div class="info-ttl">
+									Жуков Валерий Валентинович
+								</div>
+								<div class="more-info-wrap">
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<div class="list-ttl">
+										Специалист международного уровня по:
+									</div><!-- .list-ttl -->
+									<ul>
+										<li>дентальной имплантации</li>
+										<li>пьезо-хирургии</li>
+										<li>костной пластике</li>
+										<li>мягкотканной аугментации</li>
+										<li>микрохирургии мягких тканей в полости рта</li>
+									</ul>
+								</div><!-- .more-info -->
+							</div><!-- .info -->
+						</div><!-- .col-lg-2 col -->
+						<div class="col-7 col">
+							<div class="face-radius-7 radius">
+
+							</div>
+							<div class="info-7 info">
+								<div class="info-ttl">
+									Жуков Валерий Валентинович
+								</div>
+								<div class="more-info-wrap">
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<div class="list-ttl">
+										Специалист международного уровня по:
+									</div><!-- .list-ttl -->
+									<ul>
+										<li>дентальной имплантации</li>
+										<li>пьезо-хирургии</li>
+										<li>костной пластике</li>
+										<li>мягкотканной аугментации</li>
+										<li>микрохирургии мягких тканей в полости рта</li>
+									</ul>
+								</div><!-- .more-info -->
+							</div><!-- .info -->
+						</div><!-- .col-lg-2 col -->
+						<div class="col-8 col">
+							<div class="face-radius-8 radius">
+
+							</div>
+							<div class="info-8 info">
+								<div class="info-ttl">
+									Жуков Валерий Валентинович
+								</div>
+								<div class="more-info-wrap">
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<div class="list-ttl">
+										Специалист международного уровня по:
+									</div><!-- .list-ttl -->
+									<ul>
+										<li>дентальной имплантации</li>
+										<li>пьезо-хирургии</li>
+										<li>костной пластике</li>
+										<li>мягкотканной аугментации</li>
+										<li>микрохирургии мягких тканей в полости рта</li>
+									</ul>
+								</div><!-- .more-info -->
+							</div><!-- .info -->
+						</div><!-- .col-lg-2 col -->
+						<div class="col-9 col">
+							<div class="face-radius-9 radius">
+
+							</div>
+							<div class="info-9 info">
+								<div class="info-ttl">
+									Жуков Валерий Валентинович
+								</div>
+								<div class="more-info-wrap">
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<div class="list-ttl">
+										Специалист международного уровня по:
+									</div><!-- .list-ttl -->
+									<ul>
+										<li>дентальной имплантации</li>
+										<li>пьезо-хирургии</li>
+										<li>костной пластике</li>
+										<li>мягкотканной аугментации</li>
+										<li>микрохирургии мягких тканей в полости рта</li>
+									</ul>
+								</div><!-- .more-info -->
+							</div><!-- .info -->
+						</div><!-- .col-lg-2 col -->
+						<div class="col-10 col">
+							<div class="face-radius-10 radius">
+
+							</div>
+							<div class="info-10 info">
+								<div class="info-ttl">
+									Жуков Валерий Валентинович
+								</div>
+								<div class="more-info-wrap">
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<div class="list-ttl">
+										Специалист международного уровня по:
+									</div><!-- .list-ttl -->
+									<ul>
+										<li>дентальной имплантации</li>
+										<li>пьезо-хирургии</li>
+										<li>костной пластике</li>
+										<li>мягкотканной аугментации</li>
+										<li>микрохирургии мягких тканей в полости рта</li>
+									</ul>
+								</div><!-- .more-info -->
+							</div><!-- .info -->
+						</div><!-- .col-lg-2 col -->
 					</div><!-- .cols-wrap -->
 				</div><!-- .photo-wrap col-lg-12 -->
 			</div><!-- .row -->
@@ -295,32 +539,41 @@
 				Новейшее оборудование
 			</div><!-- .block-ttl -->
 			<div class="row">
-				<?php while (have_rows('equipment')) : the_row(); ?>
-					<figure class="equipment-item col-lg-4">
-						<div class="img-wrap">
-							<img src="<?= get_image_field( get_sub_field( "img" ), "equipment" ) ?>" alt="" />
-						</div><!-- .img-wrap -->
-						<h3 class="equipment-item__ttl">
-							<?= get_sub_field( "title" ) ?>
-						</h3><!-- .equipment-item__ttl -->
-						<span class="equipment-item__descr">
-							<?= get_sub_field( "desc" ) ?>
-						</span>
-						<?php if (have_rows('list')): ?>
-							<h4 class="equipment-item__advantages__ttl">
-								<?= (get_sub_field( "title_list" ))?:'Преимущества пьезо-имплантации:' ?>
-							</h4><!-- .equipment-item__advantages__ttl -->
-							<ul class="advantages__list">
-								<?php while (have_rows('list')) : the_row(); ?>
-									<li class="list__item">
-										<?= get_sub_field( "text" ) ?>
-									</li>
-								<?php endwhile; ?>
-							</ul>
-						<?php endif; ?>
-					</figure><!-- .equipment-item col-lg-4 -->
-				<?php endwhile; ?>
 
+				<div class="swiper-container-new-equipment">
+			        <div class="swiper-wrapper">
+								<?php while (have_rows('equipment')) : the_row(); ?>
+									<div class="swiper-slide">
+										<a href="<?= get_sub_field( "link" )?:'#' ?>" class="equipment-item">
+											<div class="img-wrap">
+												<img src="<?= get_image_field( get_sub_field( "img" ), "equipment" ) ?>" alt="" />
+											</div><!-- .img-wrap -->
+											<h3 class="equipment-item__ttl">
+												<?= get_sub_field( "title" ) ?>
+											</h3><!-- .equipment-item__ttl -->
+											<span class="equipment-item__descr">
+												<?= get_sub_field( "desc" ) ?>
+											</span>
+											<?php if (have_rows('list')): ?>
+												<h4 class="equipment-item__advantages__ttl">
+													<?= (get_sub_field( "title_list" ))?:'Преимущества пьезо-имплантации:' ?>
+												</h4><!-- .equipment-item__advantages__ttl -->
+												<ul class="advantages__list">
+													<?php while (have_rows('list')) : the_row(); ?>
+														<li class="list__item">
+															<?= get_sub_field( "text" ) ?>
+														</li>
+													<?php endwhile; ?>
+												</ul>
+											<?php endif; ?>
+										</a>
+									</div>
+								<?php endwhile; ?>
+
+			        </div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+				</div>
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>

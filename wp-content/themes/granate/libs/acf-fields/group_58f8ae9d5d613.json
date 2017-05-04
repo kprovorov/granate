@@ -224,6 +224,27 @@
                             "maxlength": ""
                         }
                     ]
+                },
+                {
+                    "key": "field_590b3d65d31b2",
+                    "label": "Ссылка на страницу",
+                    "name": "link",
+                    "type": "page_link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page"
+                    ],
+                    "taxonomy": [],
+                    "allow_null": 0,
+                    "allow_archives": 1,
+                    "multiple": 0
                 }
             ]
         }
@@ -245,5 +266,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1492694855
+    "modified": 1493908863
 }

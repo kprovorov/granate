@@ -23,7 +23,6 @@
 			<?php endif; ?>
 			<div class="buttons">
 				<a href="" class="btn green small-btn">Закажите обратный звонок</a>
-				<a href="" class="btn small-btn">Задать вопрос онлайн</a>
 			</div><!-- .buttons -->
 			<?php if (option_field( "facebook" ) || option_field( "instagram" )): ?>
 				<div class="social">

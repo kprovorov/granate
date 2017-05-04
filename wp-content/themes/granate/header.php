@@ -9,68 +9,46 @@
 </head>
 <body>
 	<header>
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="header__left left col-lg-6">
-					<div class="left__logo logo">
-						<a href="<? SITE_URL ?>" class="logo__link link">
-							<img src="<?= THEME_URL ?>/images/logo.png" alt="" class="link__img img" />
-						</a>
-						<?php if (option_field( "tagline" )): ?>
-							<span class="logo__span">
-								<?= option_field( "tagline" ) ?>
-							</span>
-						<?php endif; ?>
-
-					</div><!-- .left-logo logo -->
-				</div><!-- .header-left -->
-				<div class="header__right right col-lg-6">
+				<div class="container">
 					<div class="row">
-						<div class="right__addr col-lg-4">
-							<div class="addr-wrap wrap">
-								<?php if (option_field( "address" )): ?>
-									<span class="wrap-span addr">
-										<?= option_field( "address" ) ?>
-									</span>
-								<?php endif; ?>
-								<?php if (option_field( "worktime" )): ?>
-									<span class="wrap-span">
-										<?= option_field( "worktime" ) ?>
-									</span>
-								<?php endif; ?>
-							</div><!-- .addr-wrap -->
-						</div><!-- .right__addr col-lg-4 -->
-						<?php if (option_field( "phones" )): ?>
-							<div class="right__questions col-lg-4">
-								<a href="tel:<?= site_format_phone( option_field( "phones" )[0]['phone'] ) ?>" class="number">
-									<?= site_format_phone( option_field( "phones" )[0]['phone'] ) ?>
-								</a>
-								<span class="descr">
-									(многоканальный)
-								</span>
-								<a href="#" class="header-questions">
-									Задать вопрос онлайн
-								</a>
-							</div><!-- .right__addr col-lg-4 -->
+						<a href="<?= SITE_URL ?>" class="logo">
+							<img src="<?= THEME_URL ?>/images/logo.png" alt="logo" />
+						</a>
+						<?php if ( option_field( "tagline" ) ): ?>
+							<span class="desc"><?= option_field( "tagline" ) ?></span>
 						<?php endif; ?>
-						<?php if (count(option_field( "phones" )) > 1): $i = 0; ?>
-							<div class="right__call-back col-lg-4">
-								<?php while (have_rows('phones', 'option')) : the_row(); ?>
-									<?php if (!$i) {$i++; continue;}; ?>
-									<a href="<?= site_format_phone( get_sub_field( "phone" ) ) ?>" class="number<?= ($i == 1) ? ' first' : '' ?>">
-										<?= site_format_phone( get_sub_field( "phone" ) ) ?>
-									</a>
-								<?php $i++; endwhile; ?>
-								<a href="#" class="header-questions">
-									Задать вопрос онлайн
-								</a>
-							</div><!-- .right__addr col-lg-4 -->
-						<?php endif; ?>
+						<div class="right">
+							<div class="wrap">
+								<div class="left-phone-bl">
+									<?php if (option_field( "phones" )): ?>
+										<a href="tel:+38<?= option_field( "phones" )[0]['phone'] ?>"><?= site_format_phone( option_field( "phones" )[0]['phone'] ) ?></a><br>
+									<?php endif; ?>
+									<?php if (option_field( "worktime" )): ?>
+										<div class="work-time"><?= site_without_p(option_field( "worktime" )) ?></div>
+									<?php endif; ?>
+								</div>
+								<?php if (option_field( "phones" )): $i = 0; ?>
+									<ul class="right-phone-bl">
+										<?php while (have_rows('phones', 'option')) : the_row(); ?>
+											<?php if ($i > 0): ?>
+												<li><a href="tel:+38<?= get_sub_field( "phone" ) ?>" class="dr_down"><?= site_format_phone( get_sub_field( "phone" ) ) ?></a></li>
+											<?php endif; ?>
+										<?php $i++; endwhile; ?>
+									</ul>
+								<?php endif; ?>
+								<div class="clr"></div>
+							</div>
+							<a href="#" class="btn small-btn green">
+								Записаться на консультацию
+							</a>
+						</div>
 
-					</div><!-- .row -->
-				</div><!-- .header-right -->
+					</div>
+				</div>
 			</div>
-		</div><!-- .container -->
+		</div>
 	</header>
 	<nav class="navigation">
 		<div class="container">
