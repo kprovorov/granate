@@ -23,6 +23,7 @@ jQuery(function($) {
 			var swiperTop = new Swiper('.swiper-container', {
 		        pagination: '.swiper-pagination',
 		        paginationClickable: true,
+		        speed: 1000,
 		        autoplay: 5000
 		    });
 		    var swiper = new Swiper('.swiper-container-certificate', {
@@ -36,13 +37,19 @@ jQuery(function($) {
 		        pagination: '.swiper-pagination',
 		        paginationClickable: true
 		    });
-		    var swiper = new Swiper('.swiper-container-equipment', {
+		    var swiperEquipment = new Swiper('.swiper-container-equipment', {
 		        pagination: '.swiper-pagination',
 		        slidesPerView: 3,
 		        paginationClickable: true,
 		        spaceBetween: 30,
 		        nextButton: '.swiper-button-next',
         		prevButton: '.swiper-button-prev'
+		    });
+		     var swiper = new Swiper('.swiper-container-new-equipment', {
+		        pagination: '.swiper-pagination',
+		        slidesPerView: 3,
+		        paginationClickable: true,
+		        spaceBetween: 30
 		    });
 		})();
 

@@ -172,7 +172,7 @@
 				<div class="advantages">
 					<div class="row">
 						<?php while (have_rows('why_us_list', 'option')) : the_row(); ?>
-							<div class="advantages-item col-lg-4">
+							<div class="advantages-item col-lg-4 js-auto-height">
 								<div class="item__wrap">
 									<div class="wrap-ttl">
 										<?php
