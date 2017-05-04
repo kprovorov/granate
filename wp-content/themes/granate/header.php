@@ -8,6 +8,28 @@
 	<?php wp_head(); ?>
 </head>
 <body>
+	<div id="check" class="zoom-anim-dialog mfp-hide">
+		<div class="top">
+			<h3>Спасибо за заявку!</h3>	
+		</div>
+		<div class="bottom">
+			<span>
+				Мы свяжемся свами в ближайшее время
+			</span>
+		</div>
+	</div>
+	<div id="small-dialog" class="header-callback zoom-anim-dialog mfp-hide">
+		<h2>Записаться на консультацию</h2>
+		<form action="#">
+			<label for="name">Ваше имя</label>
+			<input type="text" id="name" name="name">
+			<label for="number">Номер телефона</label>
+			<input type="tel" id="number" name="number">
+			<a href="#check" class="btn green popup-with-zoom-anim">
+				Отправить
+			</a>
+		</form>
+	</div>
 	<header>
 		<div class="container-fluid">
 			<div class="row">
@@ -40,7 +62,7 @@
 								<?php endif; ?>
 								<div class="clr"></div>
 							</div>
-							<a href="#" class="btn small-btn green">
+							<a href="#small-dialog" class="btn small-btn green popup-with-zoom-anim">
 								Записаться на консультацию
 							</a>
 						</div>

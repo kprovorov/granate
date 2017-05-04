@@ -6,6 +6,10 @@ function site_scripts() {
 	wp_enqueue_script( 'jquery' );
 	wp_register_script( 'jquery-ui', 'https://code.jquery.com/ui/1.12.1/jquery-ui.js', false, null, true );
 	wp_enqueue_script( 'jquery-ui' );
+	wp_register_script( 'jquery.magnific-popup', 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js', false, null, true );
+	wp_enqueue_script( 'jquery.magnific-popup' );
+	wp_register_script( 'magnific', THEME_URL.'/js/magnific.js', false, null, true );
+	wp_enqueue_script( 'magnific' );
 	wp_register_script( 'jquery.matchHeight', 'https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js', false, null, true );
 	wp_enqueue_script( 'jquery.matchHeight' );
 	wp_register_script( 'swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js', false, null, true );
@@ -17,10 +21,6 @@ function site_scripts() {
 	if (is_page(['aboutclinic', 'photogallery','doctors']) || is_singular('service')) {
 		wp_register_script( 'masonry.pkgd', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', false, null, true );
 		wp_enqueue_script( 'masonry.pkgd' );
-		wp_register_script( 'jquery.magnific-popup', 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js', false, null, true );
-		wp_enqueue_script( 'jquery.magnific-popup' );
-		wp_register_script( 'magnific', THEME_URL.'/js/magnific.js', false, null, true );
-		wp_enqueue_script( 'magnific' );
 		wp_register_script( 'masonryjs', THEME_URL.'/js/masonry.js', false, null, true );
 		wp_enqueue_script( 'masonryjs' );
 	}
@@ -46,10 +46,8 @@ function site_styles() {
   wp_enqueue_style('jquery-ui');
   wp_register_style('swiper', 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css');
   wp_enqueue_style('swiper');
-	if (is_page(['aboutclinic', 'photogallery', 'doctors']) || is_singular('service')) {
-		wp_register_style('magnific-popup', 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css');
-		wp_enqueue_style('magnific-popup');
-	}
+	wp_register_style('magnific-popup', 'https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css');
+	wp_enqueue_style('magnific-popup');
 
 	wp_register_style('main-css', THEME_URL.'/css/style.css');
 	wp_enqueue_style('main-css');
