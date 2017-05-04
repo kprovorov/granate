@@ -294,7 +294,7 @@
 						</div><!-- .col-lg-2 col -->
 						<div class="col-2 col">
 							<div class="face-radius-2 radius">
-								
+
 							</div>
 							<div class="info-2 info">
 								<div class="info-ttl">
@@ -317,7 +317,7 @@
 						</div><!-- .col-lg-2 col -->
 						<div class="col-3 col">
 							<div class="face-radius-3 radius">
-								
+
 							</div>
 							<div class="info-3 info">
 								<div class="info-ttl">
@@ -340,7 +340,7 @@
 						</div><!-- .col-lg-2 col -->
 						<div class="col-4 col">
 							<div class="face-radius-4 radius">
-								
+
 							</div>
 							<div class="info-4 info">
 								<div class="info-ttl">
@@ -363,7 +363,7 @@
 						</div><!-- .col-lg-2 col -->
 						<div class="col-5 col">
 							<div class="face-radius-5 radius">
-								
+
 							</div>
 							<div class="info-5 info">
 								<div class="info-ttl">
@@ -386,7 +386,7 @@
 						</div><!-- .col-lg-2 col -->
 						<div class="col-6 col">
 							<div class="face-radius-6 radius">
-								
+
 							</div>
 							<div class="info-6 info">
 								<div class="info-ttl">
@@ -409,7 +409,7 @@
 						</div><!-- .col-lg-2 col -->
 						<div class="col-7 col">
 							<div class="face-radius-7 radius">
-								
+
 							</div>
 							<div class="info-7 info">
 								<div class="info-ttl">
@@ -432,7 +432,7 @@
 						</div><!-- .col-lg-2 col -->
 						<div class="col-8 col">
 							<div class="face-radius-8 radius">
-								
+
 							</div>
 							<div class="info-8 info">
 								<div class="info-ttl">
@@ -455,7 +455,7 @@
 						</div><!-- .col-lg-2 col -->
 						<div class="col-9 col">
 							<div class="face-radius-9 radius">
-								
+
 							</div>
 							<div class="info-9 info">
 								<div class="info-ttl">
@@ -478,7 +478,7 @@
 						</div><!-- .col-lg-2 col -->
 						<div class="col-10 col">
 							<div class="face-radius-10 radius">
-								
+
 							</div>
 							<div class="info-10 info">
 								<div class="info-ttl">
@@ -542,261 +542,38 @@
 
 				<div class="swiper-container-new-equipment">
 			        <div class="swiper-wrapper">
-			            <div class="swiper-slide">
-			            	<a href="#" class="equipment-item">
-								<div class="img-wrap">
-									<img src="./images/equipment-item.jpg" alt="" />
-								</div><!-- .img-wrap -->
-								<h3 class="equipment-item__ttl">
-									Piezon Master surgery 
-								</h3><!-- .equipment-item__ttl -->
-								<span class="equipment-item__descr">	
-									Ультразвуковая хирургическая система, которая позволяет максимально аккуратно разрезать кость и установить имплант всего за 20 минут.
-								</span>
-								<h4 class="equipment-item__advantages__ttl">	Преимущества пьезо-имплантации:		
-								</h4><!-- .equipment-item__advantages__ttl -->
-								<ul class="advantages__list">
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-								</ul>
-							</a>
-			            </div>
-			            <div class="swiper-slide">
-			            	<a href="#" class="equipment-item">
-								<div class="img-wrap">
-									<img src="./images/equipment-item.jpg" alt="" />
-								</div><!-- .img-wrap -->
-								<h3 class="equipment-item__ttl">
-									Piezon Master surgery 
-								</h3><!-- .equipment-item__ttl -->
-								<span class="equipment-item__descr">	
-									Ультразвуковая хирургическая система, которая позволяет максимально аккуратно разрезать кость и установить имплант всего за 20 минут.
-								</span>
-								<h4 class="equipment-item__advantages__ttl">	Преимущества пьезо-имплантации:		
-								</h4><!-- .equipment-item__advantages__ttl -->
-								<ul class="advantages__list">
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-								</ul>
-							</a>
-			            </div>
-			            <div class="swiper-slide">
-			            	<a href="#" class="equipment-item">
-								<div class="img-wrap">
-									<img src="./images/equipment-item.jpg" alt="" />
-								</div><!-- .img-wrap -->
-								<h3 class="equipment-item__ttl">
-									Piezon Master surgery 
-								</h3><!-- .equipment-item__ttl -->
-								<span class="equipment-item__descr">	
-									Ультразвуковая хирургическая система, которая позволяет максимально аккуратно разрезать кость и установить имплант всего за 20 минут.
-								</span>
-								<h4 class="equipment-item__advantages__ttl">	Преимущества пьезо-имплантации:		
-								</h4><!-- .equipment-item__advantages__ttl -->
-								<ul class="advantages__list">
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-								</ul>
-							</a>
-			            </div>
-			            <div class="swiper-slide">
-			            	<a href="#" class="equipment-item">
-								<div class="img-wrap">
-									<img src="./images/equipment-item.jpg" alt="" />
-								</div><!-- .img-wrap -->
-								<h3 class="equipment-item__ttl">
-									Piezon Master surgery 
-								</h3><!-- .equipment-item__ttl -->
-								<span class="equipment-item__descr">	
-									Ультразвуковая хирургическая система, которая позволяет максимально аккуратно разрезать кость и установить имплант всего за 20 минут.
-								</span>
-								<h4 class="equipment-item__advantages__ttl">	Преимущества пьезо-имплантации:		
-								</h4><!-- .equipment-item__advantages__ttl -->
-								<ul class="advantages__list">
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-								</ul>
-							</a>
-			            </div>
-			            <div class="swiper-slide">
-			            	<a href="#" class="equipment-item">
-								<div class="img-wrap">
-									<img src="./images/equipment-item.jpg" alt="" />
-								</div><!-- .img-wrap -->
-								<h3 class="equipment-item__ttl">
-									Piezon Master surgery 
-								</h3><!-- .equipment-item__ttl -->
-								<span class="equipment-item__descr">	
-									Ультразвуковая хирургическая система, которая позволяет максимально аккуратно разрезать кость и установить имплант всего за 20 минут.
-								</span>
-								<h4 class="equipment-item__advantages__ttl">	Преимущества пьезо-имплантации:		
-								</h4><!-- .equipment-item__advantages__ttl -->
-								<ul class="advantages__list">
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-								</ul>
-							</a>
-			            </div>
-			            <div class="swiper-slide">
-			            	<a href="#" class="equipment-item">
-								<div class="img-wrap">
-									<img src="./images/equipment-item.jpg" alt="" />
-								</div><!-- .img-wrap -->
-								<h3 class="equipment-item__ttl">
-									Piezon Master surgery 
-								</h3><!-- .equipment-item__ttl -->
-								<span class="equipment-item__descr">	
-									Ультразвуковая хирургическая система, которая позволяет максимально аккуратно разрезать кость и установить имплант всего за 20 минут.
-								</span>
-								<h4 class="equipment-item__advantages__ttl">	Преимущества пьезо-имплантации:		
-								</h4><!-- .equipment-item__advantages__ttl -->
-								<ul class="advantages__list">
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-								</ul>
-							</a>
-			            </div>
-			            <div class="swiper-slide">
-			            	<a href="#" class="equipment-item">
-								<div class="img-wrap">
-									<img src="./images/equipment-item.jpg" alt="" />
-								</div><!-- .img-wrap -->
-								<h3 class="equipment-item__ttl">
-									Piezon Master surgery 
-								</h3><!-- .equipment-item__ttl -->
-								<span class="equipment-item__descr">	
-									Ультразвуковая хирургическая система, которая позволяет максимально аккуратно разрезать кость и установить имплант всего за 20 минут.
-								</span>
-								<h4 class="equipment-item__advantages__ttl">	Преимущества пьезо-имплантации:		
-								</h4><!-- .equipment-item__advantages__ttl -->
-								<ul class="advantages__list">
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-									<li class="list__item">
-										минимальное вмешательство
-									</li>
-								</ul>
-							</a>
-			            </div>
-			            
+								<?php while (have_rows('equipment')) : the_row(); ?>
+									<div class="swiper-slide">
+										<a href="<?= get_sub_field( "link" )?:'#' ?>" class="equipment-item">
+											<div class="img-wrap">
+												<img src="<?= get_image_field( get_sub_field( "img" ), "equipment" ) ?>" alt="" />
+											</div><!-- .img-wrap -->
+											<h3 class="equipment-item__ttl">
+												<?= get_sub_field( "title" ) ?>
+											</h3><!-- .equipment-item__ttl -->
+											<span class="equipment-item__descr">
+												<?= get_sub_field( "desc" ) ?>
+											</span>
+											<?php if (have_rows('list')): ?>
+												<h4 class="equipment-item__advantages__ttl">
+													<?= (get_sub_field( "title_list" ))?:'Преимущества пьезо-имплантации:' ?>
+												</h4><!-- .equipment-item__advantages__ttl -->
+												<ul class="advantages__list">
+													<?php while (have_rows('list')) : the_row(); ?>
+														<li class="list__item">
+															<?= get_sub_field( "text" ) ?>
+														</li>
+													<?php endwhile; ?>
+												</ul>
+											<?php endif; ?>
+										</a>
+									</div>
+								<?php endwhile; ?>
+
 			        </div>
 			        <!-- Add Pagination -->
 			        <div class="swiper-pagination"></div>
 				</div>
-				<!-- <?php while (have_rows('equipment')) : the_row(); ?>
-					<figure class="equipment-item col-lg-4">
-						<div class="img-wrap">
-							<img src="<?= get_image_field( get_sub_field( "img" ), "equipment" ) ?>" alt="" />
-						</div>
-						<h3 class="equipment-item__ttl">
-							<?= get_sub_field( "title" ) ?>
-						</h3>
-						<span class="equipment-item__descr">
-							<?= get_sub_field( "desc" ) ?>
-						</span>
-						<?php if (have_rows('list')): ?>
-							<h4 class="equipment-item__advantages__ttl">
-								<?= (get_sub_field( "title_list" ))?:'Преимущества пьезо-имплантации:' ?>
-							</h4>
-							<ul class="advantages__list">
-								<?php while (have_rows('list')) : the_row(); ?>
-									<li class="list__item">
-										<?= get_sub_field( "text" ) ?>
-									</li>
-								<?php endwhile; ?>
-							</ul>
-						<?php endif; ?>
-					</figure>
-				<?php endwhile; ?> -->
-
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
