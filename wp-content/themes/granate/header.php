@@ -18,7 +18,7 @@
 			</span>
 		</div>
 	</div>
-	<div id="small-dialog" class="header-callback zoom-anim-dialog mfp-hide">
+	<div id="call-back" class="header-callback zoom-anim-dialog mfp-hide">
 		<h2>Записаться на консультацию</h2>
 		<form action="#">
 			<label for="name">Ваше имя</label>
@@ -62,7 +62,7 @@
 								<?php endif; ?>
 								<div class="clr"></div>
 							</div>
-							<a href="#small-dialog" class="btn small-btn green popup-with-zoom-anim">
+							<a href="#call-back" class="btn small-btn green popup-with-zoom-anim">
 								Записаться на консультацию
 							</a>
 						</div>
