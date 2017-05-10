@@ -24,6 +24,8 @@
 							</div><!-- .contacts -->
 							<a href="tel:<?= $phones[0]['phone'] ?>" class="number first"><?= site_format_phone( $phones[0]['phone'] ) ?>,</a><!-- .number -->
 							<a href="tel:<?= $phones[1]['phone'] ?>" class="number"><?= site_format_phone( $phones[1]['phone'] ) ?></a><!-- .number -->
+							<a href="tel:<?= $phones[2]['phone'] ?>" class="number"><?= site_format_phone( $phones[2]['phone'] ) ?>,</a><!-- .number -->
+							<a href="tel:<?= $phones[3]['phone'] ?>" class="number"><?= site_format_phone( $phones[3]['phone'] ) ?></a><!-- .number -->
 						<?php endif; ?>
 					</div><!-- .form-wrap -->
 				</div><!-- .right -->
@@ -47,6 +49,14 @@
 							</table>
 						<?php endif; ?>
 					<?php endwhile; ?>
+					<div class="text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde dolores sapiente voluptatibus autem ducimus dolor sed eos. Voluptatem nam modi possimus ut a molestias. Eos optio veritatis nam facere deserunt blanditiis! At, tempore provident dolores iure adipisci facere dolor nulla, iste. Unde dolor, dolorem provident quasi autem ex consequuntur numquam. Dolorem obcaecati aliquid asperiores, natus numquam, consequatur quod animi magni maiores, quasi non molestiae. Laudantium molestiae corporis placeat deserunt nulla voluptatem alias eligendi recusandae sit animi, explicabo maxime quisquam aliquid, unde reprehenderit et architecto adipisci eveniet labore debitis facilis magni provident quos. Tenetur officiis, nemo dicta explicabo ex quis tempore!
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci magnam nam fugiat ullam animi quasi iusto enim eum obcaecati. Laborum voluptatum ex non quos consequatur dolores cupiditate quaerat obcaecati atque, corrupti, itaque velit ullam perferendis sunt dicta dolor impedit repudiandae qui. Dolores cupiditate quisquam sunt magni, delectus animi perferendis consectetur.
+						</p>
+					</div>
 				</div><!-- .tabels-wrap -->
 			<?php endif; ?>
 		</div><!-- .row -->

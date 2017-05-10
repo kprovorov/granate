@@ -33,6 +33,9 @@
 					<h4 class="ttl">
 						Записаться на прием к врачу
 					</h4><!-- .ttl -->
+					<span class="close">
+						<img src="<?= THEME_URL ?>/images/close.png" alt="">
+					</span>
 					<form action="">
 						<div class="row">
 							<div class="col-lg-6">
@@ -53,6 +56,7 @@
 					</form>
 				</div>
 			</div><!-- .form-of-record -->
+			<button class="btn green bottom">Записаться</button>
 		</div><!-- .container -->
 	</div><!-- .first-screen -->
 	<section id="our-services" class="our-services">

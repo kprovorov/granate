@@ -35,12 +35,23 @@
 			<div class="row">
 				<div class="container">
 					<div class="row">
-						<a href="<?= SITE_URL ?>" class="logo">
-							<img src="<?= THEME_URL ?>/images/logo.png" alt="logo" />
-						</a>
-						<?php if ( option_field( "tagline" ) ): ?>
-							<span class="desc"><?= option_field( "tagline" ) ?></span>
-						<?php endif; ?>
+						<div class="left col-lg-6">
+							<a href="<?= SITE_URL ?>" class="logo">
+								<img src="<?= THEME_URL ?>/images/logo.png" alt="logo" />
+							</a>
+							<?php if ( option_field( "tagline" ) ): ?>
+								<span class="desc"><?= option_field( "tagline" ) ?></span>
+							<?php endif; ?>
+							<div class="address">
+								<span>
+									г. Киев, ул. Митрополита Шептицкого 4, (метро Левобережная)
+								</span>
+							</div>
+						</div>
+						<div class="stock stock-more">
+							<img src="<?= THEME_URL ?>/images/logo_Granate.png">
+							<p>Больше информации о нас и наших услугах Вы найдете на нашем сайте <a href="http://implant-kiev.com.ua/">implant-kiev.com.ua</a></p>
+						</div>
 						<div class="right">
 							<div class="wrap">
 								<div class="left-phone-bl">

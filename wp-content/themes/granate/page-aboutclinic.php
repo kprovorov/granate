@@ -270,7 +270,7 @@
 				<div class="photo-wrap col-lg-12">
 					<img src="<?= get_field('specialists_photo') ?>" alt="" />
 					<div class="cols-wrap">
-						<div class="col-1 col">
+						<div class="col-1 col js-auto-height">
 							<div class="face-radius-1 radius">
 							</div>
 							<div class="info-1 info">
@@ -278,7 +278,7 @@
 									Жуков Валерий Валентинович
 								</div>
 								<div class="more-info-wrap">
-									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. </span>
 									<div class="list-ttl">
 										Специалист международного уровня по:
 									</div><!-- .list-ttl -->
@@ -292,7 +292,7 @@
 								</div><!-- .more-info -->
 							</div><!-- .info -->
 						</div><!-- .col-lg-2 col -->
-						<div class="col-2 col">
+						<div class="col-2 col js-auto-height">
 							<div class="face-radius-2 radius">
 
 							</div>
@@ -301,7 +301,7 @@
 									Жуков Валерий Валентинович
 								</div>
 								<div class="more-info-wrap">
-									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителейОпыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
 									<div class="list-ttl">
 										Специалист международного уровня по:
 									</div><!-- .list-ttl -->
@@ -315,7 +315,7 @@
 								</div><!-- .more-info -->
 							</div><!-- .info -->
 						</div><!-- .col-lg-2 col -->
-						<div class="col-3 col">
+						<div class="col-3 col js-auto-height">
 							<div class="face-radius-3 radius">
 
 							</div>
@@ -324,7 +324,7 @@
 									Жуков Валерий Валентинович
 								</div>
 								<div class="more-info-wrap">
-									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Оп</span>
 									<div class="list-ttl">
 										Специалист международного уровня по:
 									</div><!-- .list-ttl -->
@@ -338,7 +338,7 @@
 								</div><!-- .more-info -->
 							</div><!-- .info -->
 						</div><!-- .col-lg-2 col -->
-						<div class="col-4 col">
+						<div class="col-4 col js-auto-height">
 							<div class="face-radius-4 radius">
 
 							</div>
@@ -347,7 +347,7 @@
 									Жуков Валерий Валентинович
 								</div>
 								<div class="more-info-wrap">
-									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.</span>
+									<span>Стоматолог, челюстно-лицевой хирург, доктор медицинских наук, врач высшей категории. Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей.Опыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителейОпыт работы – 17 лет. Установил более 4000 имплантов различных систем и производителей</span>
 									<div class="list-ttl">
 										Специалист международного уровня по:
 									</div><!-- .list-ttl -->
@@ -361,7 +361,7 @@
 								</div><!-- .more-info -->
 							</div><!-- .info -->
 						</div><!-- .col-lg-2 col -->
-						<div class="col-5 col">
+						<div class="col-5 col js-auto-height">
 							<div class="face-radius-5 radius">
 
 							</div>
@@ -384,7 +384,7 @@
 								</div><!-- .more-info -->
 							</div><!-- .info -->
 						</div><!-- .col-lg-2 col -->
-						<div class="col-6 col">
+						<div class="col-6 col js-auto-height">
 							<div class="face-radius-6 radius">
 
 							</div>
@@ -407,7 +407,7 @@
 								</div><!-- .more-info -->
 							</div><!-- .info -->
 						</div><!-- .col-lg-2 col -->
-						<div class="col-7 col">
+						<div class="col-7 col js-auto-height">
 							<div class="face-radius-7 radius">
 
 							</div>
@@ -430,7 +430,7 @@
 								</div><!-- .more-info -->
 							</div><!-- .info -->
 						</div><!-- .col-lg-2 col -->
-						<div class="col-8 col">
+						<div class="col-8 col js-auto-height">
 							<div class="face-radius-8 radius">
 
 							</div>
@@ -453,7 +453,7 @@
 								</div><!-- .more-info -->
 							</div><!-- .info -->
 						</div><!-- .col-lg-2 col -->
-						<div class="col-9 col">
+						<div class="col-9 col js-auto-height">
 							<div class="face-radius-9 radius">
 
 							</div>
@@ -476,7 +476,7 @@
 								</div><!-- .more-info -->
 							</div><!-- .info -->
 						</div><!-- .col-lg-2 col -->
-						<div class="col-10 col">
+						<div class="col-10 col js-auto-height">
 							<div class="face-radius-10 radius">
 
 							</div>
