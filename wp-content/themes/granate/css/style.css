@@ -1736,6 +1736,8 @@ header {
     font-size: 18px;
     font-weight: normal;
     color:#c81f37;
+    display: block;
+    width: 333px;
   }
   header .stock-more{
     float: left;
@@ -2099,7 +2101,11 @@ header {
 .why-we {
   padding: 20px;
   background-color: #ecf7fc; }
-
+.why-we .swiper-container-why-we{
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 40px;
+}
 .advantages-item {
   margin-bottom: 40px; }
   .advantages-item .item__wrap {

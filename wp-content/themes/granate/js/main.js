@@ -26,6 +26,13 @@ jQuery(function($) {
 		        speed: 1000,
 		        autoplay: 5000
 		    });
+		     var swiper = new Swiper('.swiper-container-why-we', {
+		        pagination: '.swiper-pagination',
+		        paginationClickable: true,
+		        spaceBetween: 30,
+		        speed: 1000,
+		        autoplay: 5000
+		    });
 		    var swiper = new Swiper('.swiper-container-certificate', {
 		        pagination: '.swiper-pagination',
 		        slidesPerView: 2,

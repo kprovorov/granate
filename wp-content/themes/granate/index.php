@@ -173,7 +173,7 @@
 				<div class="block-ttl center">
 					Почему выбирают нас
 				</div><!-- .block-ttl -->
-				<div class="advantages">
+				<!-- <div class="advantages">
 					<div class="row">
 						<?php while (have_rows('why_us_list', 'option')) : the_row(); ?>
 							<div class="advantages-item col-lg-4 js-auto-height">
@@ -184,18 +184,45 @@
 										?>
 										<img src="<?= $image ?>" alt="" class="ttl__img" />
 										<h3 class="ttl__text"><?= get_sub_field( "title" ) ?></h3>
-									</div><!-- .wrap-ttl -->
+									</div>
 									<span class="wrap-text">
 										<?= site_without_p(get_sub_field( "desc" )) ?>
 									</span>
 									<a href="" class="wrap__button btn hidden">
 										Посмотреть карту
 									</a>
-								</div><!-- .item__wrap -->
-							</div><!-- .advantages-item -->
+								</div>
+							</div>
 						<?php endwhile; ?>
-					</div><!-- .advantages -->
-				</div><!-- .row -->
+					</div>
+				</div> -->
+				<div class="swiper-container-why-we">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+			            	<img src="<?= THEME_URL ?>/images/slider/1.jpg"></img>
+			            </div>
+			            <div class="swiper-slide">
+			            	<img src="<?= THEME_URL ?>/images/slider/2.jpg"></img>
+			            </div>
+			            <div class="swiper-slide">
+			            	<img src="<?= THEME_URL ?>/images/slider/3.jpg"></img>
+			            </div>
+			            <div class="swiper-slide">
+			            	<img src="<?= THEME_URL ?>/images/slider/4.jpg"></img>
+			            </div>
+			            <div class="swiper-slide">
+			            	<img src="<?= THEME_URL ?>/images/slider/5.jpg"></img>
+			            </div>
+			            <div class="swiper-slide">
+			            	<img src="<?= THEME_URL ?>/images/slider/6.jpg"></img>
+			            </div>
+			            <div class="swiper-slide">
+			            	<img src="<?= THEME_URL ?>/images/slider/7.jpg"></img>
+			            </div>
+			        </div>
+			        <!-- Add Pagination -->
+			        <div class="swiper-pagination"></div>
+			    </div>
 			</div><!-- .container -->
 		</section><!-- .why-we -->
 	<?php endif; ?>

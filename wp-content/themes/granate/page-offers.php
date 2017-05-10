@@ -28,7 +28,7 @@
 
 			<?php if (get_field( "title_2" )): ?>
 				<div class="shares__item bottom__photo col-lg-4 js-auto-height">
-					<a href="#">
+					<a href="http://granate-site.yourfuture.site/kompleksnaya-terapiya/">
 						<div class="item__wrap">
 							<div class="info__wrap">
 								<div class="ttl__item green">
