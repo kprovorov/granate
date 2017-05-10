@@ -50,7 +50,7 @@
 						</div>
 						<div class="stock stock-more">
 							<img src="<?= THEME_URL ?>/images/logo_Granate.png">
-							<p>Больше информации о нас и наших услугах Вы найдете на нашем сайте <a href="http://implant-kiev.com.ua/">implant-kiev.com.ua</a></p>
+							<p>Более подробная информация об имплантации здесь:<a href="http://implant-kiev.com.ua/">implant-kiev.com.ua</a></p>
 						</div>
 						<div class="right">
 							<div class="wrap">
