@@ -42,7 +42,9 @@
 										<div class="row">
 											<?php foreach ($gallery as $image): ?>
 												<div class="col-lg-4">
-													<img src="<?= get_image_field( $image, "300-square" ) ?>" alt="doctor1" />
+													<a target="_blank" class="image-popup-no-margins" href="<?= get_image_field( $image, "300-square" ) ?>">
+														<img src="<?= get_image_field( $image, "300-square" ) ?>" alt="doctor1">
+													</a>
 												</div>
 											<?php endforeach; ?>
 
