@@ -26,6 +26,13 @@ jQuery(function($) {
 		        speed: 1000,
 		        autoplay: 5000
 		    });
+		     var swiper = new Swiper('.swiper-container-why-we', {
+		        pagination: '.swiper-pagination',
+		        paginationClickable: true,
+		        spaceBetween: 30,
+		        speed: 1000,
+		        autoplay: 5000
+		    });
 		    var swiper = new Swiper('.swiper-container-certificate', {
 		        pagination: '.swiper-pagination',
 		        slidesPerView: 2,
@@ -83,6 +90,32 @@ jQuery(function($) {
 			        map: map
 			    });
 			};
+		})();
+
+		(function(){
+			var button = $(".first-screen .btn"),
+				form = $(".form-of-record_wrap");
+			button.click(function(event) {
+				event.preventDefault();
+				if($(this).hasClass('active')){
+					form.hide('slow/400/fast', function() {
+						
+					});
+					button.removeClass('active');
+				}else{
+					form.show('slow/400/fast', function() {
+						
+					});
+					button.addClass('active');
+					var close = $(".first-screen .form-of-record .close");
+					close.click(function(event) {
+						form.hide('slow/400/fast', function() {
+						
+						});
+						button.removeClass('active');
+					});
+				}
+			});
 		})();
 
 	});

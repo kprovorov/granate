@@ -28,21 +28,23 @@
 
 			<?php if (get_field( "title_2" )): ?>
 				<div class="shares__item bottom__photo col-lg-4 js-auto-height">
-					<div class="item__wrap">
-						<div class="info__wrap">
-							<div class="ttl__item green">
-								<?= get_field( "title_2" ) ?>
-							</div><!-- .ttl__item -->
-							<div class="descr__item">
-								<?= get_field( "text_2" ) ?>
-							</div><!-- .descr__item -->
-						</div><!-- .info__wrap -->
-						<div class="photo__wrap">
-							<?php if (get_field( "img_2" )): ?>
-								<img src="<?= get_field('img_2') ?>" alt="" />
-							<?php endif; ?>
-						</div><!-- .photo__wrap -->
-					</div><!-- .item-wrap -->
+					<a href="http://granate-site.yourfuture.site/kompleksnaya-terapiya/">
+						<div class="item__wrap">
+							<div class="info__wrap">
+								<div class="ttl__item green">
+									<?= get_field( "title_2" ) ?>
+								</div><!-- .ttl__item -->
+								<div class="descr__item">
+									<?= get_field( "text_2" ) ?>
+								</div><!-- .descr__item -->
+							</div><!-- .info__wrap -->
+							<div class="photo__wrap">
+								<?php if (get_field( "img_2" )): ?>
+									<img src="<?= get_field('img_2') ?>" alt="" />
+								<?php endif; ?>
+							</div><!-- .photo__wrap -->
+						</div><!-- .item-wrap -->
+					</a>
 				</div><!-- .shares__item -->
 			<?php endif; ?>
 

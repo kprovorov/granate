@@ -436,7 +436,7 @@ li.green-point {
     border: 3px solid #fff; }
     .citation.blue p:before {
       top: -7px;
-      left: 5px;
+      left: -28px;
       background: url(../images/quote-blue.svg);
       background-size: cover; }
     .citation.blue p:after {
@@ -1729,6 +1729,36 @@ header {
       top: -13px;
       left: -24px;
     }
+  header .left .address{
+    margin-top: 10px;
+  }
+   header .left .address span{
+    font-size: 18px;
+    font-weight: normal;
+    color:#c81f37;
+    display: block;
+    width: 333px;
+  }
+  header .stock-more{
+    float: left;
+    width: 200px;
+  }
+  header .stock-more {
+    padding: 5px 10px;
+    text-align: center;
+    margin-top: -25px;
+    border: 3px solid #f90;
+    border-radius: 5px; }
+    header .stock-more p {
+      font-size: 12px; }
+    header .stock-more img {
+      width: 50%;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 10px; }
+    header .stock-more a {
+      text-decoration: underline;
+      color: #0a98da; }
   header .right {
     float: right;
     margin-top: -20px;
@@ -1944,6 +1974,7 @@ header {
   background: url(../images/first.jpg);
   position: relative; }
   .first-screen .form-of-record_wrap {
+    display: none;
     width: 50%;
     padding: 0px 15px 0px 0px;
     position: relative;
@@ -1954,6 +1985,16 @@ header {
     border-radius: 8px;
     position: relative;
     z-index: 100; }
+    .first-screen .form-of-record .close{
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      transition: .5s;
+    }
+    .first-screen .form-of-record .close:hover{
+      transform:rotate(90deg);
+      cursor: pointer;
+    }
     .first-screen .form-of-record .ttl {
       font-size: 24px;
       margin-bottom: 25px;
@@ -1970,6 +2011,15 @@ header {
     left: 0;
     bottom: 0;
     right: 0; }
+    .first-screen .btn.bottom{
+      position: absolute;
+      bottom: 30px;
+      z-index: 100;
+      width: 200px;
+    }
+    .first-screen .btn.bottom.active{
+      display: none;
+    }
   .first-screen .swiper-pagination {
     text-align: center; }
   .first-screen .swiper-slide {
@@ -2051,7 +2101,11 @@ header {
 .why-we {
   padding: 20px;
   background-color: #ecf7fc; }
-
+.why-we .swiper-container-why-we{
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 40px;
+}
 .advantages-item {
   margin-bottom: 40px; }
   .advantages-item .item__wrap {
@@ -2344,6 +2398,7 @@ footer {
     .our-specialists-photo .photo-wrap .col {
       position: relative;
       height: 100%; 
+      position: relative;
       display: inline-block;
       width: 10%;}
       .our-specialists-photo .photo-wrap .col-1{
@@ -2507,9 +2562,15 @@ footer {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin-bottom: 10px;
     font-weight: normal; }
+    .quality__left img{
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
   .quality__right .photo-wrap {
     max-width: 423px;
-    margin: 0 auto; }
+    margin: 0 auto; 
+    margin-bottom: 20px;}
   .quality__right .right-text {
     margin-top: -4px;
     display: block;
@@ -2976,6 +3037,7 @@ footer {
     align-items: center; }
     .set .text > div {
       font-size: 14px;
+      text-align: center;
       font-weight: normal; }
 
 .individual-consultation {
@@ -3102,6 +3164,10 @@ footer {
 
 .prices .tabels-wrap {
   padding: 65px 80px 80px; }
+  .prices .tabels-wrap .text p{
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
   .prices .tabels-wrap .tabel__head {
     padding: 15px;
     text-align: center;
