@@ -2566,6 +2566,9 @@ footer {
     margin-bottom: 10px;
     font-weight: normal; }
     .quality__left img{
+      width: 250px;
+    }
+    .quality__left img.second-photo{
       width: 100%;
       margin: 0 auto;
       display: block;
