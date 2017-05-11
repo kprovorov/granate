@@ -37,7 +37,7 @@ function recipient_mail( $components, $wpcf7_get_current_contact_form, $instance
 //---- Добавляем все фильтры
 add_filter( 'wpcf7_form_elements', 'replace_tags', 10, 1 );
 // add_filter( 'wpcf7_form_elements', 'translate_form', 10, 1 );
-add_filter( 'wpcf7_display_message', 'hide_message', 10, 2 );
+// add_filter( 'wpcf7_display_message', 'hide_message', 10, 2 );
 add_filter( 'wpcf7_mail_components', 'recipient_mail', 10, 3 );
 
  ?>

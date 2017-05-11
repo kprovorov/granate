@@ -10,7 +10,7 @@
 <body>
 	<div id="check" class="zoom-anim-dialog mfp-hide">
 		<div class="top">
-			<h3>Спасибо за заявку!</h3>	
+			<h3>Спасибо за заявку!</h3>
 		</div>
 		<div class="bottom">
 			<span>
@@ -20,15 +20,14 @@
 	</div>
 	<div id="call-back" class="header-callback zoom-anim-dialog mfp-hide">
 		<h2>Записаться на консультацию</h2>
-		<form action="#">
+		<?= do_shortcode('[contact-form-7 id="339" title="Header"]') ?>
+		<!-- <form action="#">
 			<label for="name">Ваше имя</label>
 			<input type="text" id="name" name="name">
 			<label for="number">Номер телефона</label>
 			<input type="tel" id="number" name="number">
-			<a href="#check" class="btn green popup-with-zoom-anim">
-				Отправить
-			</a>
-		</form>
+			<input type="submit" value="Отправить" class="btn green popup-with-zoom-anim">
+		</form> -->
 	</div>
 	<header>
 		<div class="container-fluid">
@@ -44,13 +43,13 @@
 							<?php endif; ?>
 							<div class="address">
 								<span>
-									г. Киев, ул. Митрополита Шептицкого 4, (метро Левобережная)
+									<?= str_replace('<br />', '', option_field( "address" )) ?>
 								</span>
 							</div>
 						</div>
 						<div class="stock stock-more">
 							<img src="<?= THEME_URL ?>/images/logo_Granate.png">
-							<p>Более подробная информация об имплантации здесь:<a href="http://implant-kiev.com.ua/">implant-kiev.com.ua</a></p>
+							<p><?= get_field( "yellow_text", "option" ) ?> <a href="<?= get_field( "yellow_link", "option" ) ?>"><?= (get_field( "yellow_link_text" ))?:preg_replace('/((http:\/\/){0,1}([^\/]*).*)/', '$3', get_field( "yellow_link", "option" )) ?></a></p>
 						</div>
 						<div class="right">
 							<div class="wrap">

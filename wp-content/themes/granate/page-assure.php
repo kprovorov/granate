@@ -8,7 +8,9 @@
 					<?= (get_field( "title" ))?:get_the_title() ?>
 				</div><!-- .block-ttl -->
 				<?= preg_replace('/<a\s/', '<a class="blue-under-text" ', get_field( "left_text" )) ?>
-				<img class="second-photo" src="<?= THEME_URL ?>/images/assure-left.jpg" alt="">
+					<?php if (get_field( "left_img" )): ?>
+						<img class="second-photo" src="<?= get_image_field(get_field( "left_img" ), 'large') ?>" alt="">
+					<?php endif; ?>
 			</div><!-- .quality__left col-lg-6 -->
 			<div class="quality__right col-lg-6">
 				<?php if (get_field( "right_img" )): ?>

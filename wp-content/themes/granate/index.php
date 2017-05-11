@@ -196,33 +196,20 @@
 						<?php endwhile; ?>
 					</div>
 				</div> -->
-				<div class="swiper-container-why-we">
-			        <div class="swiper-wrapper">
-			            <div class="swiper-slide">
-			            	<img src="<?= THEME_URL ?>/images/slider/1.jpg"></img>
-			            </div>
-			            <div class="swiper-slide">
-			            	<img src="<?= THEME_URL ?>/images/slider/2.jpg"></img>
-			            </div>
-			            <div class="swiper-slide">
-			            	<img src="<?= THEME_URL ?>/images/slider/3.jpg"></img>
-			            </div>
-			            <div class="swiper-slide">
-			            	<img src="<?= THEME_URL ?>/images/slider/4.jpg"></img>
-			            </div>
-			            <div class="swiper-slide">
-			            	<img src="<?= THEME_URL ?>/images/slider/5.jpg"></img>
-			            </div>
-			            <div class="swiper-slide">
-			            	<img src="<?= THEME_URL ?>/images/slider/6.jpg"></img>
-			            </div>
-			            <div class="swiper-slide">
-			            	<img src="<?= THEME_URL ?>/images/slider/7.jpg"></img>
-			            </div>
-			        </div>
-			        <!-- Add Pagination -->
-			        <div class="swiper-pagination"></div>
-			    </div>
+				<?php $whyus_slider = get_field( "whyus_slider", "option" ) ?>
+				<?php if ($whyus_slider): ?>
+					<div class="swiper-container-why-we">
+						<div class="swiper-wrapper">
+							<?php foreach ($whyus_slider as $image): ?>
+								<div class="swiper-slide">
+									<img src="<?= get_image_field($image, 'xlarge') ?>"></img>
+								</div>
+							<?php endforeach; ?>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+				<?php endif; ?>
 			</div><!-- .container -->
 		</section><!-- .why-we -->
 	<?php endif; ?>

@@ -35,9 +35,16 @@ if( function_exists('acf_add_options_page') ) {
   ));
 
   acf_add_options_sub_page(array(
-    'page_title' 	=> 'Сдайдер',
+    'page_title' 	=> 'Слайдер',
     'menu_title' 	=> 'Слайдер',
     'menu_slug' 	=> 'slider',
+    'parent_slug' 	=> $option_page['menu_slug'],
+  ));
+
+  acf_add_options_sub_page(array(
+    'page_title' 	=> 'Почему выбирают нас',
+    'menu_title' 	=> 'Слайдер (почему мы)',
+    'menu_slug' 	=> 'slider_whyus',
     'parent_slug' 	=> $option_page['menu_slug'],
   ));
 

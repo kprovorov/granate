@@ -1,10 +1,29 @@
 {
     "key": "group_58f7425d1616b",
-    "title": "\u041e\u0441\u043d\u043e\u0432\u043d\u044b\u0435 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438",
+    "title": "Основные настройки",
     "fields": [
         {
+            "key": "field_591484370889c",
+            "label": "Почта для форм",
+            "name": "email_cf7",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_58f742ba12877",
-            "label": "\u0421\u043b\u043e\u0433\u0430\u043d",
+            "label": "Слоган",
             "name": "tagline",
             "type": "textarea",
             "instructions": "",
@@ -25,7 +44,7 @@
         },
         {
             "key": "field_58f74811d56a4",
-            "label": "\u0410\u0434\u0440\u0435\u0441",
+            "label": "Адрес",
             "name": "address",
             "type": "textarea",
             "instructions": "",
@@ -46,7 +65,7 @@
         },
         {
             "key": "field_58f74844d56a5",
-            "label": "\u0412\u0440\u0435\u043c\u044f \u0440\u0430\u0431\u043e\u0442\u044b",
+            "label": "Время работы",
             "name": "worktime",
             "type": "textarea",
             "instructions": "",
@@ -67,7 +86,7 @@
         },
         {
             "key": "field_58f74876d56a6",
-            "label": "\u0422\u0435\u043b\u0435\u0444\u043e\u043d\u044b",
+            "label": "Телефоны",
             "name": "phones",
             "type": "repeater",
             "instructions": "",
@@ -79,14 +98,14 @@
                 "id": ""
             },
             "collapsed": "",
-            "min": "",
-            "max": "",
+            "min": 0,
+            "max": 0,
             "layout": "table",
-            "button_label": "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u0442\u0435\u043b\u0435\u0444\u043e\u043d",
+            "button_label": "Добавить телефон",
             "sub_fields": [
                 {
                     "key": "field_58f74887d56a7",
-                    "label": "\u0422\u0435\u043b\u0435\u0444\u043e\u043d",
+                    "label": "Телефон",
                     "name": "phone",
                     "type": "number",
                     "instructions": "",
@@ -111,7 +130,7 @@
         },
         {
             "key": "field_58f86c8129954",
-            "label": "\u041f\u043e\u0437\u0438\u0446\u0438\u044f \u043d\u0430 \u043a\u0430\u0440\u0442\u0435",
+            "label": "Позиция на карте",
             "name": "location",
             "type": "google_map",
             "instructions": "",
@@ -129,7 +148,7 @@
         },
         {
             "key": "field_58f86ca429955",
-            "label": "\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u0430\u0434\u0440\u0435\u0441\u0430",
+            "label": "Описание адреса",
             "name": "address_desc",
             "type": "textarea",
             "instructions": "",
@@ -147,6 +166,60 @@
             "new_lines": "br",
             "readonly": 0,
             "disabled": 0
+        },
+        {
+            "key": "field_591481ffdeb37",
+            "label": "Текст желтой плашки",
+            "name": "yellow_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5914821cdeb38",
+            "label": "Ссылка желтой плашки",
+            "name": "yellow_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_59148234deb39",
+            "label": "Текст ссылки",
+            "name": "yellow_link_text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_58f86cd129956",
@@ -182,7 +255,7 @@
         },
         {
             "key": "field_58f86cfe29958",
-            "label": "\u041b\u0438\u0446\u0435\u043d\u0437\u0438\u044f",
+            "label": "Лицензия",
             "name": "license",
             "type": "textarea",
             "instructions": "",
@@ -219,5 +292,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1492675857
+    "modified": 1494516811
 }

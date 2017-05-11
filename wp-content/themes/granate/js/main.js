@@ -99,18 +99,18 @@ jQuery(function($) {
 				event.preventDefault();
 				if($(this).hasClass('active')){
 					form.hide('slow/400/fast', function() {
-						
+
 					});
 					button.removeClass('active');
 				}else{
 					form.show('slow/400/fast', function() {
-						
+
 					});
 					button.addClass('active');
 					var close = $(".first-screen .form-of-record .close");
 					close.click(function(event) {
 						form.hide('slow/400/fast', function() {
-						
+
 						});
 						button.removeClass('active');
 					});
@@ -121,3 +121,25 @@ jQuery(function($) {
 	});
 
 });
+
+
+function successMailFeedback () {
+	$.magnificPopup.close();
+
+	setTimeout(function() {
+		var el = $('#check');
+
+		if (el.length) {
+			$.magnificPopup.open({
+				items: {
+					src: el
+				},
+				type: 'inline'
+			});
+		}
+
+		setTimeout(function() {
+			$.magnificPopup.close();
+		}, 3000);
+	}, 500);
+}

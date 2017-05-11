@@ -11,7 +11,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "25",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -30,7 +30,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "25",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -49,7 +49,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "25",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -65,15 +65,39 @@
             "mime_types": ""
         },
         {
+            "key": "field_59147d8444a4e",
+            "label": "Левое изображение",
+            "name": "left_img",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_58f9c2ebae971",
-            "label": "Текст под изображением",
+            "label": "Текст справа от изображения",
             "name": "right_img_text",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "25",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -108,5 +132,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1492763403
+    "modified": 1494515195
 }
