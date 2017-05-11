@@ -3111,7 +3111,15 @@ footer {
 .galery-wrap {
   padding-bottom: 70px; }
   .galery-wrap .block-ttl {
-    margin-bottom: 60px; }
+    margin-bottom: 10px; }
+    .galery-wrap .sub-ttl{
+      font-size: 24px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .galery-wrap .grid{
+      margin-bottom: 15px;
+    }
   .galery-wrap .photo img {
     width: 100%; }
 

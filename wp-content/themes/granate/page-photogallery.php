@@ -5,6 +5,19 @@
 		<div class="block-ttl">
 			<?= get_the_title() ?>
 		</div><!-- .block-ttl -->
+		<div class="sub-ttl">Протезирование</div>
+		<?php if ($gallery = get_field( "photo_list" )): ?>
+			<div class="grid">
+				<?php foreach ($gallery as $photo): ?>
+					<div class="grid-item">
+						<a href="<?= $photo['url'] ?>">
+							<img src="<?= get_image_field( $photo, "300-square" ) ?>">
+						</a>
+					</div>
+				<?php endforeach; ?>
+			</div>
+		<?php endif; ?>
+		<div class="sub-ttl">Реставрации</div>
 		<?php if ($gallery = get_field( "photo_list" )): ?>
 			<div class="grid">
 				<?php foreach ($gallery as $photo): ?>
