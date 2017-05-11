@@ -3451,16 +3451,17 @@ footer {
   background: white;
   padding: 20px 30px;
   text-align: left;
-  max-width: 700px;
+  max-width: 1200px;
   margin: 40px auto;
   position: relative;
 }
 #small-dialog h2{
-   margin-bottom: 10px;
+   margin-bottom: 20px;
+   font-size: 30px;
 }
 #small-dialog .photo{
    margin: 0px 10px 10px 0px;
-   width: 300px;
+   width: 400px;
    float: left;
    padding: 0;
 }
@@ -3471,6 +3472,8 @@ footer {
 #small-dialog .text p{
    font-weight: normal;
    margin-bottom: 5px;
+   font-size: 18px;
+   margin-bottom: 10px;
 }
 #small-dialog .certificate-wrap {
   padding: 20px 0px;

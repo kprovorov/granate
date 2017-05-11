@@ -14,12 +14,26 @@
 			</div><!-- .enter -->
 			<?php if (have_rows('phones', 'option')): ?>
 				<div class="number">
+					<span>
+						044-36-36-003
+					</span>
+					<span>
+						093-510-3-510						
+					</span>
+					<span>
+						095-558-29-29						
+					</span>
+					<span>
+						096-568-29-29						
+					</span>
+				</div>
+				<!-- <div class="number">
 					<?php while (have_rows('phones', 'option')) : the_row(); ?>
 						<span>
 							<?= site_format_phone( get_sub_field( "phone" ) ) ?>
 						</span>
 					<?php endwhile; ?>
-				</div><!-- .number -->
+				</div> -->
 			<?php endif; ?>
 			<div class="buttons">
 				<a href="" class="btn green small-btn">Закажите обратный звонок</a>

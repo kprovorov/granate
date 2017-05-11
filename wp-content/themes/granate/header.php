@@ -63,12 +63,16 @@
 									<?php endif; ?>
 								</div>
 								<?php if (option_field( "phones" )): $i = 0; ?>
-									<ul class="right-phone-bl">
+									<!-- <ul class="right-phone-bl">
 										<?php while (have_rows('phones', 'option')) : the_row(); ?>
 											<?php if ($i > 0): ?>
 												<li><a href="tel:+38<?= get_sub_field( "phone" ) ?>" class="dr_down"><?= site_format_phone( get_sub_field( "phone" ) ) ?></a></li>
 											<?php endif; ?>
 										<?php $i++; endwhile; ?>
+									</ul> -->
+									<ul class="right-phone-bl">															<li><a href="tel:+380935103510" class="dr_down">093-510-3-510</a></li>
+										<li><a href="tel:+380955582929" class="dr_down">095-558-29-29</a></li>
+										<li><a href="tel:+380965682929" class="dr_down">096-568-29-29</a></li>
 									</ul>
 								<?php endif; ?>
 								<div class="clr"></div>
