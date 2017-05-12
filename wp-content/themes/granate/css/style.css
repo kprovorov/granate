@@ -177,7 +177,9 @@ body {
   -webkit-box-align: center !important;
   -ms-flex-align: center !important;
   align-items: center !important; }
-
+.slider-small-text{
+  font-size: 28px;
+}
 #wrapper {
   min-width: 980px;
   overflow: hidden; }
@@ -2475,7 +2477,7 @@ footer {
         .our-specialists-photo .photo-wrap .col .info.info-6 {
           top: 240px;
           left: -150px; }
-          .our-specialists-photo .photo-wrap .col .info.info-10 {
+          .our-specialists-photo .photo-wrap .col .info.info-9 {
             left: -180px;
           }
       .our-specialists-photo .photo-wrap .col .radius {
