@@ -21,11 +21,15 @@
 						<?php if ($phones): ?>
 							<div class="contacts-ttl">
 								Наши контактные телефоны:
-							</div><!-- .contacts -->
-							<a href="tel:<?= $phones[0]['phone'] ?>" class="number first"><?= site_format_phone( $phones[0]['phone'] ) ?>,</a><!-- .number -->
-							<a href="tel:<?= $phones[1]['phone'] ?>" class="number"><?= site_format_phone( $phones[1]['phone'] ) ?></a><!-- .number -->
-							<a href="tel:<?= $phones[2]['phone'] ?>" class="number"><?= site_format_phone( $phones[2]['phone'] ) ?>,</a><!-- .number -->
-							<a href="tel:<?= $phones[3]['phone'] ?>" class="number"><?= site_format_phone( $phones[3]['phone'] ) ?></a><!-- .number -->
+							</div>
+							<!-- <a href="tel:<?= $phones[0]['phone'] ?>" class="number first"><?= site_format_phone( $phones[0]['phone'] ) ?>,</a>
+							<a href="tel:<?= $phones[1]['phone'] ?>" class="number"><?= site_format_phone( $phones[1]['phone'] ) ?></a>
+							<a href="tel:<?= $phones[2]['phone'] ?>" class="number"><?= site_format_phone( $phones[2]['phone'] ) ?>,</a>
+							<a href="tel:<?= $phones[3]['phone'] ?>" class="number"><?= site_format_phone( $phones[3]['phone'] ) ?></a> -->
+							<a href="tel:0443636003" class="number first">044-36-36-003,</a><!-- .number -->
+							<a href="tel:0935103510" class="number">093-510-3-510</a><!-- .number -->
+							<a href="tel:0955582929" class="number">095-558-29-29,</a><!-- .number -->
+							<a href="tel:0965682929" class="number">096-568-29-29</a><!-- .number -->
 						<?php endif; ?>
 					</div><!-- .form-wrap -->
 				</div><!-- .right -->
