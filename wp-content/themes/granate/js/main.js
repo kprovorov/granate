@@ -56,7 +56,9 @@ jQuery(function($) {
 		        pagination: '.swiper-pagination',
 		        slidesPerView: 3,
 		        paginationClickable: true,
-		        spaceBetween: 30
+		        spaceBetween: 30,
+		        nextButton: '.swiper-button-next',
+        		prevButton: '.swiper-button-prev'
 		    });
 		})();
 

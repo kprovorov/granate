@@ -1,12 +1,42 @@
 <?php get_header(); ?>
-
-<section class="about_clinic">
+<div class="first-block">
 	<div class="block-ttl center">
 		<?= get_field( "title" )?:get_the_title() ?>
-	</div><!-- .block-ttl -->
-	<div class="img-wrap__about" style="background: url(<?= get_field('main_img') ?>) center center no-repeat;">
-
 	</div>
+	<div class="container">
+		<div class="row">
+			<a href="#" class="puzzle col-lg-6 left">
+				<figure>
+					<img src="<?= THEME_URL ?>/images/puzzle1.jpg" alt="" />
+					<span class="puzzle__name">
+						Наш дружный коллектив
+					</span>
+				</figure>
+			</a><!-- .col-lg-6 -->
+			<a href="#" class="puzzle col-lg-6 right">
+				<figure>
+					<img src="<?= THEME_URL ?>/images/puzzle2.jpg" alt="" />
+					<span class="puzzle__name">
+						Интерьер
+					</span>
+				</figure>
+			</a><!-- .col-lg-6 -->
+			<a href="#" class="puzzle col-lg-12">
+				<figure>
+					<img src="<?= THEME_URL ?>/images/puzzle3.jpg" alt="" />
+					<span class="puzzle__name">
+						Наши сертификаты
+					</span>
+				</figure>
+			</a><!-- .puzzle col-lg-12 -->
+		</div><!-- .top-line -->
+	</div><!-- .container -->
+</div><!-- .first-block -->
+<section class="about_clinic">
+	
+	<!-- <div class="img-wrap__about" style="background: url(<?= get_field('main_img') ?>) center center no-repeat;">
+
+	</div> -->
 	<div class="container">
 		<div class="text__wrap">
 			<?= preg_replace('/(<p>)/', '<p class="about__text">', get_field( "content" )) ?>
@@ -509,6 +539,8 @@
 				</div>
 				<!-- Add Pagination -->
 				<div class="swiper-pagination"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
 		<?php endif; ?>
 		<?php if (get_field( "text_title" ) && get_field( "text_text" )): ?>
@@ -531,37 +563,38 @@
 
 				<div class="swiper-container-new-equipment">
 			        <div class="swiper-wrapper">
-								<?php while (have_rows('equipment')) : the_row(); ?>
-									<div class="swiper-slide">
-										<a href="<?= get_sub_field( "link" )?:'#' ?>" class="equipment-item">
-											<div class="img-wrap">
-												<img src="<?= get_image_field( get_sub_field( "img" ), "equipment" ) ?>" alt="" />
-											</div><!-- .img-wrap -->
-											<h3 class="equipment-item__ttl">
-												<?= get_sub_field( "title" ) ?>
-											</h3><!-- .equipment-item__ttl -->
-											<span class="equipment-item__descr">
-												<?= get_sub_field( "desc" ) ?>
-											</span>
-											<?php if (have_rows('list')): ?>
-												<h4 class="equipment-item__advantages__ttl">
-													<?= (get_sub_field( "title_list" ))?:'Преимущества пьезо-имплантации:' ?>
-												</h4><!-- .equipment-item__advantages__ttl -->
-												<ul class="advantages__list">
-													<?php while (have_rows('list')) : the_row(); ?>
-														<li class="list__item">
-															<?= get_sub_field( "text" ) ?>
-														</li>
-													<?php endwhile; ?>
-												</ul>
-											<?php endif; ?>
-										</a>
-									</div>
-								<?php endwhile; ?>
-
+						<?php while (have_rows('equipment')) : the_row(); ?>
+							<div class="swiper-slide">
+								<a href="<?= get_sub_field( "link" )?:'#' ?>" class="equipment-item">
+									<div class="img-wrap">
+										<img src="<?= get_image_field( get_sub_field( "img" ), "equipment" ) ?>" alt="" />
+									</div><!-- .img-wrap -->
+									<h3 class="equipment-item__ttl">
+										<?= get_sub_field( "title" ) ?>
+									</h3><!-- .equipment-item__ttl -->
+									<span class="equipment-item__descr">
+										<?= get_sub_field( "desc" ) ?>
+									</span>
+									<?php if (have_rows('list')): ?>
+										<h4 class="equipment-item__advantages__ttl">
+											<?= (get_sub_field( "title_list" ))?:'Преимущества пьезо-имплантации:' ?>
+										</h4><!-- .equipment-item__advantages__ttl -->
+										<ul class="advantages__list">
+											<?php while (have_rows('list')) : the_row(); ?>
+												<li class="list__item">
+													<?= get_sub_field( "text" ) ?>
+												</li>
+											<?php endwhile; ?>
+										</ul>
+									<?php endif; ?>
+								</a>
+							</div>
+						<?php endwhile; ?>
 			        </div>
 			        <!-- Add Pagination -->
 			        <div class="swiper-pagination"></div>
+			        <div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
 				</div>
 			</div><!-- .row -->
 		</div><!-- .container -->

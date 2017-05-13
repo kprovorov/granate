@@ -2261,7 +2261,8 @@ footer {
 
 .first-block {
   font-size: 0;
-  padding: 40px; }
+  padding: 40px;
+  padding-bottom: 0; }
   .first-block .puzzle {
     margin-bottom: 40px;
     position: relative; }
@@ -2737,7 +2738,8 @@ footer {
     background-size: 100% 100%; }
 
 .about_clinic {
-  padding: 20px 0px; }
+  padding: 20px 0px;
+  padding-top: 0; }
   .about_clinic .img-wrap__about {
     width: 100%;
     max-width: 2000px;
@@ -2837,7 +2839,10 @@ footer {
   padding-bottom: 60px;
   overflow: hidden;
   position: relative; }
-
+.equipment .swiper-button-next,
+.equipment .swiper-button-prev{
+  top: 40%;
+}
 .equipment .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: 35px;
   padding-left: 15px; }
@@ -2874,6 +2879,10 @@ footer {
   .new-equipment .swiper-pagination{
     text-align: center;
     
+  }
+  .new-equipment .swiper-button-next,
+  .new-equipment .swiper-button-prev{
+    top: 40%;
   }
   .new-equipment .equipment-item .img-wrap {
     background-color: #f4fafd;
