@@ -537,7 +537,7 @@
 				<div class="swiper-wrapper">
 					<?php while (have_rows('equipment_list')) : the_row(); ?>
 						<div class="swiper-slide">
-							<a class="image-popup-no-margins" href="<?= get_sub_field('img')['url'] ?>">
+							<a href="<?= get_sub_field('img')['url'] ?>">
 								<img src="<?= get_image_field( get_sub_field( "img" ), "equipment-list" ) ?>" alt="" />
 							</a>
 						</div>
