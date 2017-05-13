@@ -2875,6 +2875,7 @@ footer {
   .new-equipment .swiper-container-new-equipment{
     overflow: hidden;
     position: relative;
+    padding: 0px 30px;
   }
   .new-equipment .swiper-pagination{
     text-align: center;
@@ -2884,9 +2885,15 @@ footer {
   .new-equipment .swiper-button-prev{
     top: 40%;
   }
+  .new-equipment .swiper-button-prev{
+    left: 0;
+  }
+  .new-equipment .swiper-button-next{
+    right: 0;
+  }
   .new-equipment .equipment-item .img-wrap {
     background-color: #f4fafd;
-    padding: 20px; }
+    /*padding: 20px;*/ }
     .new-equipment .equipment-item .img-wrap img {
       width: 100%; }
   .new-equipment .equipment-item__ttl {
