@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: Галерея
+ */
+get_header(); ?>
 
 <div class="galery-wrap">
 	<div class="container">

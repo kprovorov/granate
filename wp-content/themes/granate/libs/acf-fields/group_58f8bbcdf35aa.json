@@ -3,7 +3,7 @@
     "title": "Фотогалерея",
     "fields": [
         {
-            "key": "field_59147bdaeb3a1",
+            "key": "field_5916da035b872",
             "label": "Галереи",
             "name": "gallery_list",
             "type": "repeater",
@@ -22,7 +22,7 @@
             "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_59147beceb3a2",
+                    "key": "field_5916da135b873",
                     "label": "Заголовок",
                     "name": "title",
                     "type": "text",
@@ -46,7 +46,7 @@
                     "name": "photo_list",
                     "type": "gallery",
                     "instructions": "",
-                    "required": 1,
+                    "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
@@ -75,6 +75,13 @@
                 "operator": "==",
                 "value": "128"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-photogallery.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -92,5 +99,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1494514734
+    "modified": 1494669852
 }

@@ -20,14 +20,7 @@
 	</div>
 	<div id="call-back" class="header-callback zoom-anim-dialog mfp-hide">
 		<h2>Записаться на консультацию</h2>
-		<?= do_shortcode('[contact-form-7 id="339" title="Header"]') ?>
-		<!-- <form action="#">
-			<label for="name">Ваше имя</label>
-			<input type="text" id="name" name="name">
-			<label for="number">Номер телефона</label>
-			<input type="tel" id="number" name="number">
-			<input type="submit" value="Отправить" class="btn green popup-with-zoom-anim">
-		</form> -->
+		<?= do_shortcode('[contact-form-7 id="551" title="Header"]') ?>
 	</div>
 	<header>
 		<div class="container-fluid">

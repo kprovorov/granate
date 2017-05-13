@@ -5,27 +5,33 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<a href="#" class="puzzle col-lg-6 left">
+			<a href="<?= get_field( "puzzle_link_1" ) ?>" class="puzzle col-lg-6 left">
 				<figure>
-					<img src="<?= THEME_URL ?>/images/puzzle1.jpg" alt="" />
+					<?php if (get_field( "puzzle_img_1" )): ?>
+						<img src="<?= get_field( "puzzle_img_1" ) ?>" alt="" />
+					<?php endif; ?>
 					<span class="puzzle__name">
-						Наш дружный коллектив
+						<?= get_field( "puzzle_title_1" ) ?>
 					</span>
 				</figure>
 			</a><!-- .col-lg-6 -->
-			<a href="#" class="puzzle col-lg-6 right">
+			<a href="<?= get_field( "puzzle_link_2" ) ?>" class="puzzle col-lg-6 right">
 				<figure>
-					<img src="<?= THEME_URL ?>/images/puzzle2.jpg" alt="" />
+					<?php if (get_field( "puzzle_img_2" )): ?>
+						<img src="<?= get_field( "puzzle_img_2" ) ?>" alt="" />
+					<?php endif; ?>
 					<span class="puzzle__name">
-						Интерьер
+						<?= get_field( "puzzle_title_2" ) ?>
 					</span>
 				</figure>
 			</a><!-- .col-lg-6 -->
-			<a href="#" class="puzzle col-lg-12">
+			<a href="<?= get_field( "puzzle_link_3" ) ?>" class="puzzle col-lg-12">
 				<figure>
-					<img src="<?= THEME_URL ?>/images/puzzle3.jpg" alt="" />
+					<?php if (get_field( "puzzle_img_3" )): ?>
+						<img src="<?= get_field( "puzzle_img_3" ) ?>" alt="" />
+					<?php endif; ?>
 					<span class="puzzle__name">
-						Наши сертификаты
+						<?= get_field( "puzzle_title_3" ) ?>
 					</span>
 				</figure>
 			</a><!-- .puzzle col-lg-12 -->
@@ -33,7 +39,7 @@
 	</div><!-- .container -->
 </div><!-- .first-block -->
 <section class="about_clinic">
-	
+
 	<!-- <div class="img-wrap__about" style="background: url(<?= get_field('main_img') ?>) center center no-repeat;">
 
 	</div> -->
