@@ -13,7 +13,6 @@ wp-content/themes/*/libs/*.txt
 wp-content/themes/*/temp/
 wp-content/w3tc-config/*
 
-/.htaccess
 /license.txt
 /readme.html
 /sitemap.xml
