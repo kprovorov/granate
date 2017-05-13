@@ -18,12 +18,10 @@ function site_scripts() {
 	wp_enqueue_script( 'googlemaps' );
 	wp_register_script( 'main', THEME_URL.'/js/main.js', false, null, true );
 	wp_enqueue_script( 'main' );
-	if (is_page(['aboutclinic', 'photogallery','doctors']) || is_singular('service')) {
-		wp_register_script( 'masonry.pkgd', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', false, null, true );
-		wp_enqueue_script( 'masonry.pkgd' );
-		wp_register_script( 'masonryjs', THEME_URL.'/js/masonry.js', false, null, true );
-		wp_enqueue_script( 'masonryjs' );
-	}
+	wp_register_script( 'masonry.pkgd', 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js', false, null, true );
+	wp_enqueue_script( 'masonry.pkgd' );
+	wp_register_script( 'masonryjs', THEME_URL.'/js/masonry.js', false, null, true );
+	wp_enqueue_script( 'masonryjs' );
 	if (is_page(['doctors'])) {
 		wp_register_script( 'doctors-popup', THEME_URL.'/js/doctors-popup.js', false, null, true );
 		wp_enqueue_script( 'doctors-popup' );
