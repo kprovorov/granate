@@ -9,28 +9,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
 
-Redirect 301 /o-klinike.html http://granate.com.ua/aboutclinic/
-Redirect 301 /stomatologicheskoe-oborudovanie.html http://granate.com.ua/stomatologicheskie-ustanovki-klassa-vip-a-dec-300/
-Redirect 301 /o-klinike/stomatologicheskoe-oborudovanie/lampa-kholodnogo-otbelivaniya-zoom.html http://granate.com.ua/kompyuternaya-tomografiya-chelyustno-litsevoj-oblasti/
-Redirect 301 /o-klinike/rentgen-kabinet.html http://granate.com.ua/intraoralnyj-rentgen-kabinet/
-Redirect 301 /o-klinike/sterelizatsionnaya.html http://granate.com.ua/assure/
-Redirect 301 /o-klinike/antispid-antigipatit.html http://granate.com.ua/assure/
-Redirect 301 /uslugi.html http://granate.com.ua/services/
-Redirect 301 /uslugi/implantaciya-zubov.html http://granate.com.ua/service/implantatsiya-i-hirurgicheskoe-lechenie/
-Redirect 301 /uslugi/lechenie-kariesa.html http://granate.com.ua/service/lechenie-i-profilaktika-kariesa/
-Redirect 301 /uslugi/vyravnivanie-zubov.html http://granate.com.ua/services/
-Redirect 301 /uslugi/khirurgicheskoe-lechenie-udalenie-zuba.html http://granate.com.ua/service/implantatsiya-i-hirurgicheskoe-lechenie/
-Redirect 301 /uslugi/sovremennoe-protezirovanie-zubov-kiev.html http://granate.com.ua/service/protezirovanie-zubov/
-Redirect 301 /uslugi/otbelivanie-zubov-kiev.html http://granate.com.ua/service/otbelivanie-zubov/
-Redirect 301 /uslugi/detskaya-stomatologiya-kiev.html http://granate.com.ua/services/
-Redirect 301 /uslugi/restavratsiya-zubov-kiev.html http://granate.com.ua/service/esteticheskaya-stomatologiya/
-Redirect 301 /uslugi/dental-disease.html http://granate.com.ua/service/gigiena-bolezni-zubov/
-Redirect 301 /uslugi/terapevticheskaya-stomatologiya.html http://granate.com.ua/services/
-Redirect 301 /nashi-vrachi.html http://granate.com.ua/doctors/
-Redirect 301 /ceny.html http://granate.com.ua/price/
-Redirect 301 /fotogalereya-rabot.html http://granate.com.ua/photogallery/
-Redirect 301 /otzivy.html http://granate.com.ua/testimonials/
-Redirect 301 /nashi-druzya.html http://granate.com.ua/aboutclinic/
-Redirect 301 /contacts.html http://granate.com.ua/contacts/
-
 # END WordPress

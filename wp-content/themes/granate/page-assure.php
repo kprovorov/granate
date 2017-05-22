@@ -3,7 +3,7 @@
 <section class="quality">
 	<div class="container">
 		<div class="row">
-			<div class="quality__left col-lg-6">
+			<div class="quality__left col-xs-6">
 				<div class="block-ttl left">
 					<?= (get_field( "title" ))?:get_the_title() ?>
 				</div><!-- .block-ttl -->
@@ -11,8 +11,8 @@
 					<?php if (get_field( "left_img" )): ?>
 						<img class="second-photo" src="<?= get_image_field(get_field( "left_img" ), 'large') ?>" alt="">
 					<?php endif; ?>
-			</div><!-- .quality__left col-lg-6 -->
-			<div class="quality__right col-lg-6">
+			</div><!-- .quality__left col-xs-6 -->
+			<div class="quality__right col-xs-6">
 				<?php if (get_field( "right_img" )): ?>
 					<div class="photo-wrap">
 						<img src="<?= get_field( "right_img" ) ?>" alt="" />
@@ -25,22 +25,22 @@
 						</span>
 					</div><!-- .right-text -->
 				<?php endif; ?>
-			</div><!-- .quality__right col-lg-6 -->
+			</div><!-- .quality__right col-xs-6 -->
 		</div><!-- .row -->
 	</div><!-- .contacts -->
 </section><!-- .quality -->
 <section class="security">
 	<div class="container">
 		<div class="row">
-			<div class="security__left col-lg-6 js-auto-height">
+			<div class="security__left col-xs-6 js-auto-height">
 				<div class="left-ttl">
 					<?= get_field( "sec_title" ) ?>
 				</div><!-- .block-ttl -->
 				<div class="left-sub-ttl">
 					<?= get_field( "sec_subtitle" ) ?>
 				</div><!-- .left-sub-ttl -->
-			</div><!-- .security__left col-lg-6 -->
-			<div class="security__right col-lg-6 js-auto-height">
+			</div><!-- .security__left col-xs-6 -->
+			<div class="security__right col-xs-6 js-auto-height">
 				<?php if (have_rows('sec_list')): ?>
 					<ul>
 						<?php while (have_rows('sec_list')) : the_row(); ?>
@@ -48,20 +48,20 @@
 						<?php endwhile; ?>
 					</ul>
 				<?php endif; ?>
-			</div><!-- .security__right col-lg-6 -->
+			</div><!-- .security__right col-xs-6 -->
 		</div><!-- .row -->
 	</div><!-- .container -->
 </section><!-- .security -->
 <section class="disinfectants">
 	<div class="container">
 		<div class="row">
-			<div class="disinfectants__left col-lg-6">
+			<div class="disinfectants__left col-xs-6">
 				<span>
 					<?= get_field( "dis_title" ) ?>
 				</span>
 				<img src="<?= get_field('dis_img') ?>" alt="" />
-			</div><!-- .disinfectants__left col-lg-6 -->
-			<div class="disinfectants__right col-lg-6">
+			</div><!-- .disinfectants__left col-xs-6 -->
+			<div class="disinfectants__right col-xs-6">
 				<?= preg_replace('/p>/', 'span>', get_field( "dis_text" )) ?>
 				<?php if (have_rows('dis_list')): ?>
 					<ul>
@@ -70,14 +70,14 @@
 						<?php endwhile; ?>
 					</ul>
 				<?php endif; ?>
-			</div><!-- .disinfectants__right col-lg-6 -->
+			</div><!-- .disinfectants__right col-xs-6 -->
 		</div><!-- .row -->
 	</div><!-- .contaiter -->
 </section><!-- .isinfectants -->
 <section class="points">
 	<div class="container">
 		<div class="row">
-			<div class="points__left col-lg-4 col-lg-offset-1">
+			<div class="points__left col-xs-4 col-xs-offset-1">
 				<?php if (have_rows('left_list')): ?>
 					<ul>
 						<?php while (have_rows('left_list')) : the_row(); ?>
@@ -88,7 +88,7 @@
 					</ul>
 				<?php endif; ?>
 			</div><!-- .points__left -->
-			<div class="points__right col-lg-4 col-lg-offset-2">
+			<div class="points__right col-xs-4 col-xs-offset-2">
 				<?php if (have_rows('right_list')): ?>
 					<ul>
 						<?php while (have_rows('right_list')) : the_row(); ?>

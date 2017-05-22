@@ -9,14 +9,14 @@
 								<div class="swiper-slide">
 									<div class="container">
 										<div class="row">
-											<div class="info col-lg-6">
+											<div class="info col-xs-6">
 												<div class="text__wrap">
 													<?= get_sub_field( "title" ) ?>
 												</div><!-- .text__wrap -->
-											</div><!-- .info col-lg-6 -->
-											<div class="slide-photo col-lg-6">
+											</div><!-- .info col-xs-6 -->
+											<div class="slide-photo col-xs-6">
 
-											</div><!-- .photo col-lg-6 -->
+											</div><!-- .photo col-xs-6 -->
 										</div><!-- .row -->
 									</div><!-- .container -->
 								</div>
@@ -38,11 +38,11 @@
 					</span>
 					<form action="">
 						<div class="row">
-							<div class="col-lg-6">
+							<div class="col-xs-6">
 								<input type="text" name=name/ placeholder="Имя">
 								<input type="text" name=tel/ placeholder="Телефон">
-							</div><!-- .col-lg-6 -->
-							<div class="col-lg-6">
+							</div><!-- .col-xs-6 -->
+							<div class="col-xs-6">
 								<input type="text" id="datepicker" placeholder="Дата">
 								<select name="consultation" id="">
 									<option value="Консультация">Консультация</option>
@@ -51,7 +51,7 @@
 									<option value="Консультация">Консультация</option>
 								</select>
 								<button class="btn green small-btn" type="submit">Записаться</button>
-							</div><!-- .col-lg-6 -->
+							</div><!-- .col-xs-6 -->
 						</div><!-- .row -->
 					</form>
 				</div>
@@ -68,7 +68,7 @@
 				<div class="our-services__items items">
 					<div class="row">
 						<?php if (option_field( "services_title_1" )): ?>
-							<div class="items__implant item col-lg-4">
+							<div class="items__implant item col-xs-4">
 								<div class="item__name">
 									<?= option_field( "services_title_1" ) ?>
 								</div><!-- .item__name -->
@@ -83,7 +83,7 @@
 							</div><!-- .items_implant item -->
 						<?php endif; ?>
 
-						<div class="items__implants-two item col-lg-4">
+						<div class="items__implants-two item col-xs-4">
 							<?php if (option_field( "services_title_2" )): ?>
 								<div class="items__implant item">
 									<div class="item__name">
@@ -115,9 +115,9 @@
 								</div><!-- .items_implant item -->
 							<?php endif; ?>
 
-						</div><!-- .items__implants-two item col-lg-4 -->
+						</div><!-- .items__implants-two item col-xs-4 -->
 						<?php if (option_field( "services_title_4" )): ?>
-							<div class="items__implant item col-lg-4">
+							<div class="items__implant item col-xs-4">
 								<div class="item__name">
 									<?= option_field( "services_title_4" ) ?>
 								</div><!-- .item__name -->
@@ -132,7 +132,7 @@
 							</div><!-- .items_implant item -->
 						<?php endif; ?>
 						<?php if (option_field( "services_title_5" )): ?>
-							<div class="items__implant item col-lg-6">
+							<div class="items__implant item col-xs-6">
 								<div class="item__name">
 									<?= option_field( "services_title_5" ) ?>
 								</div><!-- .item__name -->
@@ -147,7 +147,7 @@
 							</div><!-- .items_implant item -->
 						<?php endif; ?>
 						<?php if (option_field( "services_title_6" )): ?>
-							<div class="items__implant item col-lg-6">
+							<div class="items__implant item col-xs-6">
 								<div class="item__name">
 									<?= option_field( "services_title_6" ) ?>
 								</div><!-- .item__name -->
@@ -176,7 +176,7 @@
 				<!-- <div class="advantages">
 					<div class="row">
 						<?php while (have_rows('why_us_list', 'option')) : the_row(); ?>
-							<div class="advantages-item col-lg-4 js-auto-height">
+							<div class="advantages-item col-xs-4 js-auto-height">
 								<div class="item__wrap">
 									<div class="wrap-ttl">
 										<?php

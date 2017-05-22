@@ -7,7 +7,7 @@
 		</div><!-- .block-ttl -->
 		<div class="row">
 			<?php if (get_field( "title_1" )): ?>
-				<div class="shares__item left__photo col-lg-8 js-auto-height">
+				<div class="shares__item left__photo col-xs-8 js-auto-height">
 					<div class="item__wrap">
 						<div class="photo__wrap">
 							<?php if (get_field( "img_1" )): ?>
@@ -27,8 +27,8 @@
 			<?php endif; ?>
 
 			<?php if (get_field( "title_2" )): ?>
-				<div class="shares__item bottom__photo col-lg-4 js-auto-height">
-					<a href="http://granate-site.yourfuture.site/kompleksnaya-terapiya/">
+				<div class="shares__item bottom__photo col-xs-4 js-auto-height">
+					<a href="http://granate.com.ua/kompleksnaya-terapiya/">
 						<div class="item__wrap">
 							<div class="info__wrap">
 								<div class="ttl__item green">
@@ -49,7 +49,7 @@
 			<?php endif; ?>
 
 			<?php if (get_field( "text_3" )): ?>
-				<div class="shares__item bottom__photo col-lg-6 js-auto-height">
+				<div class="shares__item bottom__photo col-xs-6 js-auto-height">
 					<div class="item__wrap">
 						<div class="photo__wrap">
 							<?php if (get_field( "img_3" )): ?>
@@ -67,7 +67,7 @@
 			<?php endif; ?>
 
 			<?php if (get_field( "text_4" )): ?>
-				<div class="shares__item right__photo col-lg-6 js-auto-height">
+				<div class="shares__item right__photo col-xs-6 js-auto-height">
 					<div class="item__wrap">
 						<div class="info__wrap">
 							<?= site_without_p(get_field( "text_4" )) ?>
@@ -82,7 +82,7 @@
 			<?php endif; ?>
 
 			<?php if (get_field( "text_5" )): ?>
-				<div class="shares__item right__photo famaly col-lg-8 js-auto-height">
+				<div class="shares__item right__photo famaly col-xs-8 js-auto-height">
 					<div class="item__wrap">
 						<div class="info__wrap">
 							<div class="descr__item">
@@ -99,7 +99,7 @@
 			<?php endif; ?>
 
 			<?php if (get_field( "text_6" )): ?>
-				<div class="shares__item bottom__photo col-lg-4 js-auto-height">
+				<div class="shares__item bottom__photo col-xs-4 js-auto-height">
 					<div class="item__wrap">
 						<div class="photo__wrap">
 							<?php if (get_field( "img_6" )): ?>
@@ -114,7 +114,7 @@
 			<?php endif; ?>
 
 			<?php if (get_field( "text_7" )): ?>
-				<div class="shares__item right__photo pensioners col-lg-6 js-auto-height">
+				<div class="shares__item right__photo pensioners col-xs-6 js-auto-height">
 					<div class="item__wrap">
 						<div class="info__wrap">
 							<div class="descr__item">
@@ -131,7 +131,7 @@
 			<?php endif; ?>
 
 			<?php if (get_field( "text_8" )): ?>
-				<div class="shares__item bottom__photo col-lg-6 js-auto-height">
+				<div class="shares__item bottom__photo col-xs-6 js-auto-height">
 					<div class="item__wrap">
 						<div class="photo__wrap">
 							<?php if (get_field( "img_8" )): ?>
@@ -146,7 +146,7 @@
 			<?php endif; ?>
 
 			<?php if (get_field( "text_9" )): ?>
-				<div class="shares__item bottom__photo col-lg-4 js-auto-height">
+				<div class="shares__item bottom__photo col-xs-4 js-auto-height">
 					<div class="item__wrap">
 						<div class="photo__wrap">
 							<?php if (get_field( "img_9" )): ?>
@@ -161,7 +161,7 @@
 			<?php endif; ?>
 
 			<?php if (get_field( "text_10" )): ?>
-				<div class="shares__item right__photo date col-lg-8 js-auto-height">
+				<div class="shares__item right__photo date col-xs-8 js-auto-height">
 					<div class="item__wrap">
 						<div class="info__wrap">
 							<div class="descr__item">
@@ -178,7 +178,7 @@
 			<?php endif; ?>
 
 			<?php if (get_field( "text_11" )): ?>
-				<div class="shares__item col-lg-12 js-auto-height">
+				<div class="shares__item col-xs-12 js-auto-height">
 					<div class="item__wrap">
 						<?php if (get_field( "img_11" )): ?>
 							<img src="<?= get_field('img_11') ?>" alt="" />

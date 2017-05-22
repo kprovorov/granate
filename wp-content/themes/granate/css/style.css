@@ -238,7 +238,13 @@ input:focus:-moz-placeholder {
 * {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold; }
-
+#main{
+  max-height: 100%;
+    overflow: hidden;
+    max-width: 5000px;
+    min-width: 1340px;
+    margin: 0 auto;
+}
 .wrapper {
   width: 100%;
   overflow: hidden; }
@@ -256,7 +262,30 @@ img {
   display: block;
   border-bottom: 2px dotted #56c847;
   margin-top: 40px; }
-
+header .social a{
+  vertical-align: middle;
+}
+header .social .blog{
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  color:#555555;
+  overflow: hidden;
+  position: relative;
+}
+header .social .blog:before{
+  position: absolute;
+  content:'';
+  bottom: 5px;
+  left: -100%;
+  height: 2px; 
+  width: 70%;
+  background-color: #555555; 
+  transition: .5s; 
+}
+header .social .blog:hover:before{
+ left: 7px; 
+}
 .block-ttl {
   padding: 10px 0px 30px;
   font-size: 32px;
@@ -715,14 +744,14 @@ hr {
   padding-left: 15px;
   padding-right: 15px; }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .container {
     width: 750px; } }
 
 @media (min-width: 992px) {
   .container {
     width: 970px; } }
-
+*/
 @media (min-width: 1200px) {
   .container {
     width: 1170px; } }
@@ -2408,23 +2437,23 @@ footer {
       display: inline-block;
       width: 10%;}
       .our-specialists-photo .photo-wrap .col-1{
-        width: 15%;
+        width: 12%;
       }
       .our-specialists-photo .photo-wrap .col-4,
       .our-specialists-photo .photo-wrap .col-5{
-        width: 10%;
+        width: 9%;
       }
       .our-specialists-photo .photo-wrap .col-6{
-        width: 11%;
+        width: 9%;
       }
       .our-specialists-photo .photo-wrap .col-7{
-        width: 11%;
+        width: 9%;
       }
       .our-specialists-photo .photo-wrap .col-8{
         width: 9%;
       }
       .our-specialists-photo .photo-wrap .col-9{
-        width: 9%;
+        width: 10%;
       }
       .our-specialists-photo .photo-wrap .col:hover {
         cursor: pointer; }
@@ -2488,8 +2517,8 @@ footer {
       .our-specialists-photo .photo-wrap .col .radius {
         opacity: 0;
         position: relative;
-        top: 35px;
-        left: 51px;
+        top: 72px;
+        left: 11px;
         width: 140px;
         height: 140px;
         border-radius: 50%;
@@ -2497,29 +2526,32 @@ footer {
         -webkit-transition: 0.7s ease-in;
         transition: 0.7s ease-in; }
         .our-specialists-photo .photo-wrap .col .radius.face-radius-2 {
-          top: 35px;
-          left: -13px; }
-        .our-specialists-photo .photo-wrap .col .radius.face-radius-3 {
           top: 55px;
-          left: -13px; }
+          left: -18px; }
+        .our-specialists-photo .photo-wrap .col .radius.face-radius-3 {
+          top: 49px;
+          left: -22px; }
         .our-specialists-photo .photo-wrap .col .radius.face-radius-4 {
           top: 63px;
-          left: -10px; }
+          left: -30px; }
         .our-specialists-photo .photo-wrap .col .radius.face-radius-5 {
           top: 64px;
           left: -17px; }
         .our-specialists-photo .photo-wrap .col .radius.face-radius-6 {
-          top: 35px;
-          left: -16px; }
+          top: 75px;
+          left: -26px; }
         .our-specialists-photo .photo-wrap .col .radius.face-radius-7 {
-          top: 67px;
-          left: -28px; }
+          top: 47px;
+          left: -17px; }
         .our-specialists-photo .photo-wrap .col .radius.face-radius-8 {
-          top: 64px;
-          left: -15px; }
+          top: 78px;
+          left: -19px; }
         .our-specialists-photo .photo-wrap .col .radius.face-radius-9 {
-          top: 50px;
-          left: -20px;}
+          top: 75px;
+          left: 7px;}
+        .our-specialists-photo .photo-wrap .col .radius.face-radius-10 {
+          top: 62px;
+          left: -21px;}
 .equipment-wrap {
   padding: 60px 0px 30px;
   background-color: #ecf7fc; }
@@ -2950,17 +2982,17 @@ footer {
         margin: 0 auto;
         margin-bottom: 10px;
         padding: 25px 20px; }
-        .services_wrap .item .img_wrap:before {
-          position: absolute;
-          content: '';
-          top: 20px;
-          left: 20px;
-          right: 20px;
-          bottom: 20px;
-          background: url(../images/teeth/1.svg);
-          background-size: 100% 100%;
-          -webkit-transition: .4s;
-          transition: .4s; }
+        .services_wrap .item .img_wrap img.not-hover{
+          width: 60px;
+          height: 60px;}
+        .services_wrap .item .img_wrap img.hover{
+          display: none;
+          width: 70px;
+          height: 70px;}
+        .services_wrap .item .img_wrap:hover .not-hover {
+          display: none; }
+        .services_wrap .item .img_wrap:hover .hover {
+          display: block; }
       .services_wrap .item:hover .img_wrap:after {
         content: '';
         position: absolute;
@@ -2972,73 +3004,10 @@ footer {
         border-radius: 50%;
         -webkit-transition: 0.4s;
         transition: 0.4s; }
-      .services_wrap .item:hover .img_wrap:before {
-        background: url(../images/teeth/1-hover.svg);
-        background-size: 100% 100%; }
       .services_wrap .item:hover .item__name {
         color: #1d9fdb;
         -webkit-transition: 0.4s;
         transition: 0.4s; }
-      .services_wrap .item:nth-child(2) .img_wrap:before {
-        background: url(../images/teeth/2.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(2):hover .img_wrap:before {
-        background: url(../images/teeth/2-hover.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(3) .img_wrap:before {
-        background: url(../images/teeth/3.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(3):hover .img_wrap:before {
-        background: url(../images/teeth/3-hover.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(4) .img_wrap:before {
-        background: url(../images/teeth/4.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(4):hover .img_wrap:before {
-        background: url(../images/teeth/4-hover.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(5) .img_wrap:before {
-        background: url(../images/teeth/5.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(5):hover .img_wrap:before {
-        background: url(../images/teeth/5-hover.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(6) .img_wrap:before {
-        background: url(../images/teeth/6.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(6):hover .img_wrap:before {
-        background: url(../images/teeth/6-hover.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(7) .img_wrap:before {
-        background: url(../images/teeth/7.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(7):hover .img_wrap:before {
-        background: url(../images/teeth/7-hover.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(8) .img_wrap:before {
-        background: url(../images/teeth/8.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(8):hover .img_wrap:before {
-        background: url(../images/teeth/8-hover.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(9) .img_wrap:before {
-        background: url(../images/teeth/9.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(9):hover .img_wrap:before {
-        background: url(../images/teeth/9-hover.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(10) .img_wrap:before {
-        background: url(../images/teeth/10.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(10):hover .img_wrap:before {
-        background: url(../images/teeth/10-hover.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(11) .img_wrap:before {
-        background: url(../images/teeth/11.svg);
-        background-size: 100% 100%; }
-      .services_wrap .item:nth-child(11):hover .img_wrap:before {
-        background: url(../images/teeth/11-hover.svg);
-        background-size: 100% 100%; }
       .services_wrap .item .item__name {
         display: block;
         text-align: center;
@@ -3146,6 +3115,7 @@ footer {
 .grid-item {
   width: 23%;
   margin: 7px;
+  padding: 0px;
   height: auto; }
   .grid-item img {
     width: 100%; }

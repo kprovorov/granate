@@ -3,6 +3,54 @@
     "title": "Первый блок",
     "fields": [
         {
+            "key": "field_59201356475ab",
+            "label": "Картинка для услуг",
+            "name": "thumb_main",
+            "type": "image",
+            "instructions": "В обычном состоянии",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_59201378475ac",
+            "label": "Картинка для услуг",
+            "name": "thumb_hover",
+            "type": "image",
+            "instructions": "При наведении",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_58f9df7f714b0",
             "label": "Изображение",
             "name": "main_img",
@@ -63,5 +111,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1492770986
+    "modified": 1495274381
 }

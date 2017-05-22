@@ -9,7 +9,7 @@
 		<div class="row">
 			<?php $i = 0; ?>
 			<?php while (have_rows('doctors')) : the_row(); ?>
-				<div class="col-lg-4 doctor__wrap js-auto-height">
+				<div class="col-xs-4 doctor__wrap js-auto-height">
 					<a class="popup-with-zoom-anim doctorpopup" href="#small-dialog" data-id="<?= $i ?>">
 						<?php
 						  $image = (get_sub_field( "photo" )) ? get_image_field( get_sub_field( "photo" ), "doctor" ) : DOCTOR_PLACEHOLDER;
@@ -41,7 +41,7 @@
 									<div class="certificate-wrap">
 										<div class="row">
 											<?php foreach ($gallery as $image): ?>
-												<div class="col-lg-4">
+												<div class="col-xs-4">
 													<a target="_blank" class="image-popup-no-margins" href="<?= get_image_field( $image, "300-square" ) ?>">
 														<img src="<?= get_image_field( $image, "300-square" ) ?>" alt="doctor1">
 													</a>

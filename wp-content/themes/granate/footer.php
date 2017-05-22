@@ -63,10 +63,10 @@
 <footer>
 	<div class="container">
 		<div class="row">
-			<div class="footer__logo logo col-lg-2">
+			<div class="footer__logo logo col-xs-2">
 				<img src="<?= THEME_URL ?>/images/logo.png" alt="" class="logo__img" />
 			</div><!-- .footer-logo logo -->
-			<nav class="footer__navigation col-lg-6 col-lg-offset-1">
+			<nav class="footer__navigation col-xs-6 col-xs-offset-1">
 				<ul class="items">
 					<?php site_menu([
 						'id' => 2,
@@ -75,7 +75,7 @@
 					]); ?>
 				</ul><!-- .items -->
 			</nav><!-- .footer__navigation -->
-			<div class="license col-lg-3">
+			<div class="license col-xs-3">
 				<span class="granate__license">
 					<?= option_field( "license" ) ?>
 				</span>
@@ -83,10 +83,11 @@
 					<span>Сделано в</span>
 					<img src="<?= THEME_URL ?>/images/logo-dev.svg" alt="" />
 				</div><!-- .developers -->
-			</div><!-- .license col-lg-3 -->
+			</div><!-- .license col-xs-3 -->
 		</div><!-- .row -->
 	</div><!-- .container -->
 </footer>
 <?php wp_footer(); ?>
+</div>
 </body>
 </html>

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="<?php bloginfo('charset'); ?>">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<!-- <meta name="viewport" content="initial-scale=1, minimum-scale=1, user-scalable=yes"> -->
 	<title><?php echo wp_get_document_title(); ?></title>
 	<link href="<?= THEME_URL ?>/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 <body>
+	<div id="main">
 	<div id="check" class="zoom-anim-dialog mfp-hide">
 		<div class="top">
 			<h3>Спасибо за заявку!</h3>
@@ -27,7 +29,7 @@
 			<div class="row">
 				<div class="container">
 					<div class="row">
-						<div class="left col-lg-6">
+						<div class="left col-xs-6">
 							<a href="<?= SITE_URL ?>" class="logo">
 								<img src="<?= THEME_URL ?>/images/logo.png" alt="logo" />
 							</a>
@@ -72,6 +74,22 @@
 							<a href="#call-back" class="btn small-btn green popup-with-zoom-anim">
 								Записаться на консультацию
 							</a>
+							<div class="clr"></div>
+							<?php if (option_field( "facebook" ) || option_field( "instagram" )): ?>
+								<div class="social">
+								<a href="#" class="blog">блог</a>
+									<?php if (option_field( "facebook" )): ?>
+										<a href="<?= option_field( "facebook" ) ?>">
+											<img src="<?= THEME_URL ?>/images/facebook-logo-black.svg" alt="" />
+										</a>
+									<?php endif; ?>
+									<?php if (option_field( "instagram" )): ?>
+										<a href="<?= option_field( "instagram" ) ?>">
+											<img src="<?= THEME_URL ?>/images/instagram-symbol-black.svg" alt="" />
+										</a>
+									<?php endif; ?>
+								</div><!-- .social -->
+							<?php endif; ?>
 						</div>
 
 					</div>

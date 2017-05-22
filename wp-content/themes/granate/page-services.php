@@ -19,52 +19,52 @@
 		<?php if ( !get_field( "hide_service" )): ?>
 			<?php if ($services->have_posts()): ?>
 				<div class="services_wrap">
-					<?php while($services->have_posts()) : $services->the_post() ?>
-						<a href="<?php the_permalink(); ?>" class="item js-auto-height">
+					<div class="services_wrap">
+            <?php while ($services->have_posts()) : $services->the_post(); ?>
+						<a href="<?php the_permalink(); ?>" class="item js-auto-height" style="height: 196px;">
 							<div class="img_wrap">
-
+								<img class="not-hover" src="<?= (get_field( "thumb_main" )?:PLACEHOLDER) ?>" alt="">
+								<img class="hover" src="<?= (get_field( "thumb_hover" )?:PLACEHOLDER) ?>" alt="">
 							</div><!-- .img_wrap -->
-							<span class="item__name">
-								<?php the_title() ?>
-							</span>
+							<span class="item__name"><?php the_title(); ?></span>
 						</a>
-					<?php endwhile; ?>
-					<?php wp_reset_postdata(); ?>
+          <?php endwhile; ?>
 
+					</div>
 				</div><!-- .services_wrap -->
 			<?php else: ?>
 				Услуг нет
-			<?php endif; ?>
+			<?php endif; wp_reset_postdata(); ?>
 		<?php endif; ?>
 	</div><!-- .container -->
 </section><!-- .services -->
 <div class="set">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-3 img js-auto-height">
+			<div class="col-xs-3 img js-auto-height">
 				<img src="<?= get_image_field( get_field( "img_1" ), "300-square" ) ?>" alt="" />
-			</div><!-- .col-lg-3 -->
-			<div class="col-lg-3 text js-auto-height">
+			</div><!-- .col-xs-3 -->
+			<div class="col-xs-3 text js-auto-height">
 				<div><?= get_field( "text_1" ) ?></div>
-			</div><!-- .col-lg-3 text -->
-			<div class="col-lg-3 img js-auto-height">
+			</div><!-- .col-xs-3 text -->
+			<div class="col-xs-3 img js-auto-height">
 				<img src="<?= get_image_field( get_field( "img_2" ), "300-square" ) ?>" alt="" />
-			</div><!-- .col-lg-3 -->
-			<div class="col-lg-3 text js-auto-height">
+			</div><!-- .col-xs-3 -->
+			<div class="col-xs-3 text js-auto-height">
 				<div><?= get_field( "text_2" ) ?></div>
-			</div><!-- .col-lg-3 text -->
-			<div class="col-lg-3 text js-auto-height">
+			</div><!-- .col-xs-3 text -->
+			<div class="col-xs-3 text js-auto-height">
 				<div><?= get_field( "text_3" ) ?></div>
-			</div><!-- .col-lg-3 text -->
-			<div class="col-lg-3 img js-auto-height">
+			</div><!-- .col-xs-3 text -->
+			<div class="col-xs-3 img js-auto-height">
 				<img src="<?= get_image_field( get_field( "img_3" ), "300-square" ) ?>" alt="" />
-			</div><!-- .col-lg-3 -->
-			<div class="col-lg-3 text js-auto-height">
+			</div><!-- .col-xs-3 -->
+			<div class="col-xs-3 text js-auto-height">
 				<div><?= get_field( "text_4" ) ?></div>
-			</div><!-- .col-lg-3 text -->
-			<div class="col-lg-3 img js-auto-height">
+			</div><!-- .col-xs-3 text -->
+			<div class="col-xs-3 img js-auto-height">
 				<img src="<?= get_image_field( get_field( "img_4" ), "300-square" ) ?>" alt="" />
-			</div><!-- .col-lg-3 -->
+			</div><!-- .col-xs-3 -->
 		</div><!-- .row -->
 	</div><!-- .container -->
 </div><!-- .set -->
@@ -74,7 +74,7 @@
 			<?= get_field( "list_title" ) ?>
 		</div><!-- .block-ttl -->
 		<div class="row">
-			<div class="left col-lg-6">
+			<div class="left col-xs-6">
 				<?php if (have_rows('ind_list')): ?>
 					<ul>
 						<?php while (have_rows('ind_list')) : the_row(); ?>

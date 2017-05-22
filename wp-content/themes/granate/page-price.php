@@ -7,10 +7,10 @@
 				<?= (get_field( "title" ))?:get_the_title() ?>
 			</div><!-- .block-ttl -->
 			<div class="row">
-				<div class="left col-lg-6">
+				<div class="left col-xs-6">
 					<?= get_field( "desc" ) ?>
 				</div><!-- .left -->
-				<div class="right col-lg-5 col-lg-offset-1">
+				<div class="right col-xs-5 col-xs-offset-1">
 					<div class="form-wrap">
 						<span>
 							<?= get_field( "border_desc" ) ?>

@@ -15,9 +15,9 @@ get_header(); ?>
 					<div class="sub-ttl"><?= get_sub_field( "title" ) ?></div>
 				<?php endif; ?>
 				<?php if ($gallery = get_sub_field( "photo_list" )): ?>
-					<div class="grid">
+					<div class="grid row">
 						<?php foreach ($gallery as $photo): ?>
-							<div class="grid-item">
+							<div class="grid-item col-xs-3">
 								<a href="<?= $photo['url'] ?>">
 									<img src="<?= get_image_field( $photo, "300-square" ) ?>">
 								</a>

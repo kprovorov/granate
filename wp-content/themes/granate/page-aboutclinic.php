@@ -5,7 +5,7 @@
 	</div>
 	<div class="container">
 		<div class="row">
-			<a href="<?= get_field( "puzzle_link_1" ) ?>" class="puzzle col-lg-6 left">
+			<a href="<?= get_field( "puzzle_link_1" ) ?>" class="puzzle col-xs-6 left">
 				<figure>
 					<?php if (get_field( "puzzle_img_1" )): ?>
 						<img src="<?= get_field( "puzzle_img_1" ) ?>" alt="" />
@@ -14,8 +14,8 @@
 						<?= get_field( "puzzle_title_1" ) ?>
 					</span>
 				</figure>
-			</a><!-- .col-lg-6 -->
-			<a href="<?= get_field( "puzzle_link_2" ) ?>" class="puzzle col-lg-6 right">
+			</a><!-- .col-xs-6 -->
+			<a href="<?= get_field( "puzzle_link_2" ) ?>" class="puzzle col-xs-6 right">
 				<figure>
 					<?php if (get_field( "puzzle_img_2" )): ?>
 						<img src="<?= get_field( "puzzle_img_2" ) ?>" alt="" />
@@ -24,8 +24,8 @@
 						<?= get_field( "puzzle_title_2" ) ?>
 					</span>
 				</figure>
-			</a><!-- .col-lg-6 -->
-			<a href="<?= get_field( "puzzle_link_3" ) ?>" class="puzzle col-lg-12">
+			</a><!-- .col-xs-6 -->
+			<a href="<?= get_field( "puzzle_link_3" ) ?>" class="puzzle col-xs-12">
 				<figure>
 					<?php if (get_field( "puzzle_img_3" )): ?>
 						<img src="<?= get_field( "puzzle_img_3" ) ?>" alt="" />
@@ -34,7 +34,7 @@
 						<?= get_field( "puzzle_title_3" ) ?>
 					</span>
 				</figure>
-			</a><!-- .puzzle col-lg-12 -->
+			</a><!-- .puzzle col-xs-12 -->
 		</div><!-- .top-line -->
 	</div><!-- .container -->
 </div><!-- .first-block -->
@@ -50,12 +50,12 @@
 		<div class="modern__stomatology">
 			<div class="row">
 				<?php if (get_field( "photo_wlist" )): ?>
-					<div class="modern__left col-lg-6">
+					<div class="modern__left col-xs-6">
 						<img src="<?= get_field( "photo_wlist" ) ?>" alt="" />
-					</div><!-- .modern__left col-lg-6 -->
+					</div><!-- .modern__left col-xs-6 -->
 				<?php endif; ?>
 				<?php if (have_rows('service_list')): ?>
-					<div class="modern__right col-lg-6">
+					<div class="modern__right col-xs-6">
 						<div class="ttl">
 							В гранат клиник доступны все услуги современной стоматологии:
 						</div><!-- .form-ttl -->
@@ -64,7 +64,7 @@
 								<li><?= get_sub_field( "text" ) ?>;</li>
 							<?php endwhile; ?>
 						</ul>
-					</div><!-- .modern-right col-lg-6 -->
+					</div><!-- .modern-right col-xs-6 -->
 				<?php endif; ?>
 			</div><!-- .row -->
 		</div><!-- .modern__stomatology -->
@@ -105,7 +105,7 @@
 			</div><!-- .block-ttl -->
 			<div class="row top-line">
 				<?php while (have_rows('doctors')) : the_row(); ?>
-					<figure class="specialist col-lg-3">
+					<figure class="specialist col-xs-3">
 						<div class="img-wrap">
 							<?php
 							  $image = (get_sub_field( "photo" )) ? get_image_field( get_sub_field( "photo" ), "300-square" ) : DOCTOR_PLACEHOLDER;
@@ -139,7 +139,7 @@
 
 			</div><!-- .top-line -->
 			<div class="row bottom-line hidden">
-				<figure class="specialist col-lg-3">
+				<figure class="specialist col-xs-3">
 					<div class="img-wrap">
 						<img src="<?= THEME_URL ?>/images/specialist.png" alt="" />
 					</div><!-- .img-wrap -->
@@ -169,8 +169,8 @@
 							</li>
 						</ul>
 					</div><!-- .admission-schedule -->
-				</figure><!-- .specialist col-lg-3 -->
-				<figure class="specialist col-lg-3">
+				</figure><!-- .specialist col-xs-3 -->
+				<figure class="specialist col-xs-3">
 					<div class="img-wrap">
 						<img src="<?= THEME_URL ?>/images/specialist.png" alt="" />
 					</div><!-- .img-wrap -->
@@ -200,8 +200,8 @@
 							</li>
 						</ul>
 					</div><!-- .admission-schedule -->
-				</figure><!-- .specialist col-lg-3 -->
-				<figure class="specialist col-lg-3">
+				</figure><!-- .specialist col-xs-3 -->
+				<figure class="specialist col-xs-3">
 					<div class="img-wrap">
 						<img src="<?= THEME_URL ?>/images/specialist.png" alt="" />
 					</div><!-- .img-wrap -->
@@ -231,8 +231,8 @@
 							</li>
 						</ul>
 					</div><!-- .admission-schedule -->
-				</figure><!-- .specialist col-lg-3 -->
-				<figure class="specialist col-lg-3">
+				</figure><!-- .specialist col-xs-3 -->
+				<figure class="specialist col-xs-3">
 					<div class="img-wrap">
 						<img src="<?= THEME_URL ?>/images/specialist.png" alt="" />
 					</div><!-- .img-wrap -->
@@ -262,7 +262,7 @@
 							</li>
 						</ul>
 					</div><!-- .admission-schedule -->
-				</figure><!-- .specialist col-lg-3 -->
+				</figure><!-- .specialist col-xs-3 -->
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section><!-- .our-specialists -->
@@ -274,11 +274,11 @@
 				Наши специалисты
 			</div><!-- .block-ttl -->
 			<div class="row">
-				<!-- <div class="photo-wrap col-lg-12">
+				<!-- <div class="photo-wrap col-xs-12">
 					<img src="<?= get_field('specialists_photo') ?>" alt="" />
 					<div class="cols-wrap">
 						<?php while (have_rows('specialists_list')) : the_row(); ?>
-							<div class="col-lg-<?= get_sub_field( "width" ) ?> col">
+							<div class="col-xs-<?= get_sub_field( "width" ) ?> col">
 								<div class="face-radius-<?= $i ?> radius">
 								</div>
 								<div class="info-<?= $i ?> info">
@@ -303,13 +303,36 @@
 						<?php $i++; endwhile; ?>
 					</div>
 				</div> -->
-				<div class="photo-wrap col-lg-12">
+				<div class="photo-wrap col-xs-12">
 					<img src="<?= get_field('specialists_photo') ?>" alt="" />
 					<div class="cols-wrap">
 						<div class="col-1 col js-auto-height">
 							<div class="face-radius-1 radius">
 							</div>
 							<div class="info-1 info">
+								<div class="info-ttl">
+									Кубрак Людмила Владимировна
+								</div>
+								<div class="more-info-wrap">
+								    <span>Врач Хирург имплантолог-ортопед. Опыт работы 12 лет. Действительный Член ассоциации имплантологов Украины с 2010г. Действительный Член ассоциации стоматологов Украины.</span>
+									<div class="list-ttl">
+										Специализация, виды деятельности:
+									</div><!-- .list-ttl -->
+									<ul>
+										<li>Удаление зубов любой сложности атипичные удаления; </li>
+										<li>Костоктомии резекции верхушки корней</li>
+										<li> Работа с мягкими тканями</li>
+										<li>Хирургические вмешательства у пациентов  с проведением седации в сопровождении врача-анестезиолога</li>
+										<li>Полные сьёмные и частично сьёмные протезы(акрил, нейлон); 	</li>
+										<li>Имплантация: -одномоментная; -двухэтапная; -с немедленной нагрузкой</li>
+									</ul>
+								</div><!-- .more-info -->
+							</div><!-- .info -->
+						</div><!-- .col-xs-2 col -->
+						<div class="col-2 col js-auto-height">
+							<div class="face-radius-2 radius">
+							</div>
+							<div class="info-2 info">
 								<div class="info-ttl">
 									Жуков Валерий Валентинович
 								</div>
@@ -327,12 +350,12 @@
 									</ul>
 								</div><!-- .more-info -->
 							</div><!-- .info -->
-						</div><!-- .col-lg-2 col -->
-						<div class="col-2 col js-auto-height">
-							<div class="face-radius-2 radius">
+						</div><!-- .col-xs-2 col -->
+						<div class="col-3 col js-auto-height">
+							<div class="face-radius-3 radius">
 
 							</div>
-							<div class="info-2 info">
+							<div class="info-3 info">
 								<div class="info-ttl">
 									Евтушенко Александр Юрьевич
 								</div>
@@ -351,12 +374,12 @@
 									</ul>
 								</div><!-- .more-info -->
 							</div><!-- .info -->
-						</div><!-- .col-lg-2 col -->
-						<div class="col-3 col js-auto-height">
-							<div class="face-radius-3 radius">
+						</div><!-- .col-xs-3 col -->
+						<div class="col-4 col js-auto-height">
+							<div class="face-radius-4 radius">
 
 							</div>
-							<div class="info-3 info">
+							<div class="info-4 info">
 								<div class="info-ttl">
 									Батова Ирина Валентиновна
 								</div>
@@ -378,12 +401,12 @@
 									</ul>
 								</div><!-- .more-info -->
 							</div><!-- .info -->
-						</div><!-- .col-lg-2 col -->
-						<div class="col-4 col js-auto-height">
-							<div class="face-radius-4 radius">
+						</div><!-- .col-xs-4 col -->
+						<div class="col-5 col js-auto-height">
+							<div class="face-radius-5 radius">
 
 							</div>
-							<div class="info-4 info">
+							<div class="info-5 info">
 								<div class="info-ttl">
 									Саенко Ирина Владимировна
 								</div>
@@ -403,12 +426,12 @@
 									</ul>
 								</div><!-- .more-info -->
 							</div><!-- .info -->
-						</div><!-- .col-lg-2 col -->
-						<div class="col-5 col js-auto-height">
-							<div class="face-radius-5 radius">
+						</div><!-- .col-xs-5 col -->
+						<div class="col-6 col js-auto-height">
+							<div class="face-radius-6 radius">
 
 							</div>
-							<div class="info-5 info">
+							<div class="info-6 info">
 								<div class="info-ttl">
 									Чаркина Наталия Владимировна
 								</div>
@@ -425,12 +448,12 @@
 									</ul>
 								</div><!-- .more-info -->
 							</div><!-- .info -->
-						</div><!-- .col-lg-2 col -->
-						<div class="col-6 col js-auto-height">
-							<div class="face-radius-6 radius">
+						</div><!-- .col-xs-6 col -->
+						<div class="col-7 col js-auto-height">
+							<div class="face-radius-7 radius">
 
 							</div>
-							<div class="info-6 info">
+							<div class="info-7 info">
 								<div class="info-ttl">
 									Палидвор Роман Ярославович
 								</div>
@@ -450,12 +473,12 @@
 									</ul>
 								</div><!-- .more-info -->
 							</div><!-- .info -->
-						</div><!-- .col-lg-2 col -->
-						<div class="col-7 col js-auto-height">
-							<div class="face-radius-7 radius">
+						</div><!-- .col-xs-7 col -->
+						<div class="col-8 col js-auto-height">
+							<div class="face-radius-8 radius">
 
 							</div>
-							<div class="info-7 info">
+							<div class="info-8 info">
 								<div class="info-ttl">
 									Медик Ольга Александровна
 								</div>
@@ -475,12 +498,12 @@
 									</ul>
 								</div><!-- .more-info -->
 							</div><!-- .info -->
-						</div><!-- .col-lg-2 col -->
-						<div class="col-8 col js-auto-height">
-							<div class="face-radius-8 radius">
+						</div><!-- .col-xs-8 col -->
+						<div class="col-9 col js-auto-height">
+							<div class="face-radius-9 radius">
 
 							</div>
-							<div class="info-8 info">
+							<div class="info-9 info">
 								<div class="info-ttl">
 									Рыдванская Ирина Васильевна
 								</div>
@@ -499,12 +522,12 @@
 									</ul>
 								</div><!-- .more-info -->
 							</div><!-- .info -->
-						</div><!-- .col-lg-2 col -->
-						<div class="col-9 col js-auto-height">
-							<div class="face-radius-9 radius">
+						</div><!-- .col-xs-9 col -->
+						<div class="col-10 col js-auto-height">
+							<div class="face-radius-10 radius">
 
 							</div>
-							<div class="info-9 info">
+							<div class="info-10 info">
 								<div class="info-ttl">
 									Мельник Лилия Николаевна
 								</div>
@@ -523,9 +546,9 @@
 									</ul>
 								</div><!-- .more-info -->
 							</div><!-- .info -->
-						</div><!-- .col-lg-2 col -->
+						</div><!-- .col-xs-10 col -->
 					</div><!-- .cols-wrap -->
-				</div><!-- .photo-wrap col-lg-12 -->
+				</div><!-- .photo-wrap col-xs-12 -->
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</div><!-- .our-specialists -->
